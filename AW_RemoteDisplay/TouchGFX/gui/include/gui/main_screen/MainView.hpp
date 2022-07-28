@@ -12,7 +12,6 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 	
-
 protected:
     virtual void handleTickEvent();
     int tickCounter = 0;

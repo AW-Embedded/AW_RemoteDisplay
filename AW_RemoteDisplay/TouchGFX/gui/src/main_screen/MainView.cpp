@@ -25,6 +25,7 @@ void MainView::handleTickEvent()
         isGreenVisible = mainStateGreen.isVisible();
         mainStateGreen.setVisible(!isGreenVisible);
         mainStateGreen.invalidate();
+        tickCounter = 0;
     }
 
 }

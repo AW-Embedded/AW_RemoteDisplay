@@ -9,6 +9,8 @@
 #include <gui/status_screen/StatusPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class StatusViewBase : public touchgfx::View<StatusPresenter>
 {
@@ -27,8 +29,20 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image statusBG;
+    touchgfx::ButtonWithLabel btnStatusHome;
+    touchgfx::TextArea statusHeader;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<StatusViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

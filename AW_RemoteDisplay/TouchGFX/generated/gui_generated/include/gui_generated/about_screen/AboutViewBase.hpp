@@ -9,6 +9,8 @@
 #include <gui/about_screen/AboutPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class AboutViewBase : public touchgfx::View<AboutPresenter>
 {
@@ -27,8 +29,20 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image aboutBG;
+    touchgfx::ButtonWithLabel btnAboutHome;
+    touchgfx::TextArea aboutHeader;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<AboutViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

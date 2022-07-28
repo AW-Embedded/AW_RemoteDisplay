@@ -4,8 +4,10 @@
 #include <gui_generated/settings_screen/SettingsViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
-SettingsViewBase::SettingsViewBase()
+SettingsViewBase::SettingsViewBase() :
+    buttonCallback(this, &SettingsViewBase::buttonCallbackHandler)
 {
 
     __background.setPosition(0, 0, 480, 272);
@@ -14,11 +16,43 @@ SettingsViewBase::SettingsViewBase()
     settingsBG.setXY(0, 0);
     settingsBG.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
 
+    btnSettingsCancel.setXY(0, 212);
+    btnSettingsCancel.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    btnSettingsCancel.setLabelText(touchgfx::TypedText(T___SINGLEUSE_DUMA));
+    btnSettingsCancel.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsCancel.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsCancel.setAction(buttonCallback);
+
+    btnSettingsSave.setXY(420, 212);
+    btnSettingsSave.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    btnSettingsSave.setLabelText(touchgfx::TypedText(T___SINGLEUSE_1FA7));
+    btnSettingsSave.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsSave.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+
+    settingsHeader.setXY(199, 0);
+    settingsHeader.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    settingsHeader.setLinespacing(0);
+    settingsHeader.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IMOE));
+
     add(__background);
     add(settingsBG);
+    add(btnSettingsCancel);
+    add(btnSettingsSave);
+    add(settingsHeader);
 }
 
 void SettingsViewBase::setupScreen()
 {
 
+}
+
+void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &btnSettingsCancel)
+    {
+        //settingsToMain
+        //When btnSettingsCancel clicked change screen to Main
+        //Go to Main with no screen transition
+        application().gotoMainScreenNoTransition();
+    }
 }

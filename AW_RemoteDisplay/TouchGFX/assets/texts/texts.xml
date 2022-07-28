@@ -6,6 +6,36 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_IMOE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Settings</Translation>
+      </Text>
+      <Text Id="__SingleUse_0W17" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Keyboard</Translation>
+      </Text>
+      <Text Id="__SingleUse_8QF8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">About</Translation>
+      </Text>
+      <Text Id="__SingleUse_JWZO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Status</Translation>
+      </Text>
+      <Text Id="__SingleUse_EN8X" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Home</Translation>
+      </Text>
+      <Text Id="__SingleUse_D3BV" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Home</Translation>
+      </Text>
+      <Text Id="__SingleUse_022I" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Save</Translation>
+      </Text>
+      <Text Id="__SingleUse_AUSN" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Cancel</Translation>
+      </Text>
+      <Text Id="__SingleUse_1FA7" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Save</Translation>
+      </Text>
+      <Text Id="__SingleUse_DUMA" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Cancel</Translation>
+      </Text>
       <Text Id="__SingleUse_T7OG" Alignment="Center" TypographyId="Small">
         <Translation Language="GB">Status</Translation>
       </Text>

@@ -111,7 +111,44 @@
             "RelativeFilename": "RedLED.png"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "mainToStatus",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnMainStatus"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Status"
+            }
+          },
+          {
+            "InteractionName": "mainToAbout",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnMainAbout"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "About"
+            }
+          },
+          {
+            "InteractionName": "mainToSettings",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnMainSettings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ]
       },
       {
         "Name": "Settings",
@@ -122,9 +159,80 @@
             "Width": 480,
             "Height": 272,
             "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnSettingsCancel",
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_DUMA",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnSettingsSave",
+            "X": 420,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_1FA7",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "settingsHeader",
+            "X": 199,
+            "Width": 82,
+            "Height": 24,
+            "TextId": "__SingleUse_IMOE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "settingsToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnSettingsCancel"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
       },
       {
         "Name": "Status",
@@ -135,9 +243,58 @@
             "Width": 480,
             "Height": 272,
             "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnStatusHome",
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_D3BV",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "statusHeader",
+            "X": 208,
+            "Width": 65,
+            "Height": 24,
+            "TextId": "__SingleUse_JWZO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "StatusToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnStatusHome"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
       },
       {
         "Name": "Keyboard",
@@ -148,9 +305,80 @@
             "Width": 480,
             "Height": 272,
             "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnKeyboardCancel",
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_AUSN",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnKeyboardSave",
+            "X": 420,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_022I",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "keyboardHeader",
+            "X": 193,
+            "Width": 95,
+            "Height": 24,
+            "TextId": "__SingleUse_0W17",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "keyboardToSettings",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnKeyboardCancel"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ]
       },
       {
         "Name": "About",
@@ -161,9 +389,53 @@
             "Width": 480,
             "Height": 272,
             "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_texture_480x272px.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "btnAboutHome",
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
+            "TextId": "__SingleUse_EN8X",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "aboutHeader",
+            "X": 211,
+            "Width": 59,
+            "Height": 24,
+            "TextId": "__SingleUse_8QF8",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "aboutToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnAboutHome"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],

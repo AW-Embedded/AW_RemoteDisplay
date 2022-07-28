@@ -6,7 +6,8 @@
 #include <BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
-MainViewBase::MainViewBase()
+MainViewBase::MainViewBase() :
+    buttonCallback(this, &MainViewBase::buttonCallbackHandler)
 {
 
     __background.setPosition(0, 0, 480, 272);
@@ -27,18 +28,21 @@ MainViewBase::MainViewBase()
 
     btnMainSettings.setXY(0, 0);
     btnMainSettings.setBitmaps(touchgfx::Bitmap(BITMAP_CONFIGURATION_ID), touchgfx::Bitmap(BITMAP_CONFIGURATION_ID));
+    btnMainSettings.setAction(buttonCallback);
 
     btnMainAbout.setXY(0, 212);
     btnMainAbout.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     btnMainAbout.setLabelText(touchgfx::TypedText(T___SINGLEUSE_MCCQ));
     btnMainAbout.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnMainAbout.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnMainAbout.setAction(buttonCallback);
 
     btnMainStatus.setXY(420, 212);
     btnMainStatus.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     btnMainStatus.setLabelText(touchgfx::TypedText(T___SINGLEUSE_T7OG));
     btnMainStatus.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnMainStatus.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnMainStatus.setAction(buttonCallback);
 
     mainStateGreen.setXY(450, 10);
     mainStateGreen.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
@@ -66,4 +70,29 @@ MainViewBase::MainViewBase()
 void MainViewBase::setupScreen()
 {
 
+}
+
+void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &btnMainSettings)
+    {
+        //mainToSettings
+        //When btnMainSettings clicked change screen to Settings
+        //Go to Settings with no screen transition
+        application().gotoSettingsScreenNoTransition();
+    }
+    else if (&src == &btnMainAbout)
+    {
+        //mainToAbout
+        //When btnMainAbout clicked change screen to About
+        //Go to About with no screen transition
+        application().gotoAboutScreenNoTransition();
+    }
+    else if (&src == &btnMainStatus)
+    {
+        //mainToStatus
+        //When btnMainStatus clicked change screen to Status
+        //Go to Status with no screen transition
+        application().gotoStatusScreenNoTransition();
+    }
 }

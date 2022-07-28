@@ -9,6 +9,8 @@
 #include <gui/keyboard_screen/KeyboardPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class KeyboardViewBase : public touchgfx::View<KeyboardPresenter>
 {
@@ -27,8 +29,21 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image keyboardBG;
+    touchgfx::ButtonWithLabel btnKeyboardCancel;
+    touchgfx::ButtonWithLabel btnKeyboardSave;
+    touchgfx::TextArea keyboardHeader;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<KeyboardViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

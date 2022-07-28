@@ -9,6 +9,8 @@
 #include <gui/settings_screen/SettingsPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class SettingsViewBase : public touchgfx::View<SettingsPresenter>
 {
@@ -27,8 +29,21 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image settingsBG;
+    touchgfx::ButtonWithLabel btnSettingsCancel;
+    touchgfx::ButtonWithLabel btnSettingsSave;
+    touchgfx::TextArea settingsHeader;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 
