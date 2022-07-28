@@ -184,6 +184,54 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>F32DF8F1-0F9F-2B22-73F1-8313C8C48CFE</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\status_screen">
+      <UniqueIdentifier>ABE34F78-622B-9C00-6E24-3725BA0ADD25</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\settings_screen">
+      <UniqueIdentifier>34A4C1CB-E818-2615-DFC7-AA3AAAC5FB31</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\settings_screen">
+      <UniqueIdentifier>CA211C24-A622-39BD-88FF-7AC79F80A990</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\status_screen">
+      <UniqueIdentifier>0AAAC59A-99AA-CB56-7C9F-507BCB677E25</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\keyboard_screen">
+      <UniqueIdentifier>8123EC50-50C3-A720-0DA4-FB56E7A0D158</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\keyboard_screen">
+      <UniqueIdentifier>F7AE7989-95D0-A6F5-F156-2F8EE443C276</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\keyboard_screen">
+      <UniqueIdentifier>B8D53F77-DACD-43B3-381A-B05EC1D43E0B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\settings_screen">
+      <UniqueIdentifier>F3958911-E5F3-C67D-7E65-B13138C86D67</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\keyboard_screen">
+      <UniqueIdentifier>B06A0E48-951A-A74F-0FCD-14E720719B38</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\settings_screen">
+      <UniqueIdentifier>BDE73F2F-A01D-0D03-C3E4-52D9AEEAF94B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\status_screen">
+      <UniqueIdentifier>0EF1B2FF-07C4-CD9C-B2E0-C26D2C165EE9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\status_screen">
+      <UniqueIdentifier>AF8E4D02-7E1A-A740-1C33-4A2F9E701266</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\about_screen">
+      <UniqueIdentifier>77461B5E-58F6-E5EE-8D1C-AFD23761AC35</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\about_screen">
+      <UniqueIdentifier>424A7FD6-FB38-B8B6-3632-F318FE9EDB71</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\about_screen">
+      <UniqueIdentifier>D30E3928-5A2D-3B9D-F4BB-B61D42865374</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\about_screen">
+      <UniqueIdentifier>6CB533BC-3925-1DCE-F942-BCE409DDDAB3</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -224,6 +272,42 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\keyboard_screen\KeyboardPresenter.cpp">
+      <Filter>Source Files\gui\keyboard_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\keyboard_screen\KeyboardView.cpp">
+      <Filter>Source Files\gui\keyboard_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\keyboard_screen\KeyboardViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\keyboard_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings_screen\SettingsPresenter.cpp">
+      <Filter>Source Files\gui\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings_screen\SettingsView.cpp">
+      <Filter>Source Files\gui\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\settings_screen\SettingsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\status_screen\StatusPresenter.cpp">
+      <Filter>Source Files\gui\status_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\status_screen\StatusView.cpp">
+      <Filter>Source Files\gui\status_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\status_screen\StatusViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\status_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\about_screen\AboutPresenter.cpp">
+      <Filter>Source Files\gui\about_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\about_screen\AboutView.cpp">
+      <Filter>Source Files\gui\about_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\about_screen\AboutViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\about_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -675,6 +759,42 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\keyboard_screen\KeyboardPresenter.hpp">
+      <Filter>Header Files\gui\keyboard_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\keyboard_screen\KeyboardView.hpp">
+      <Filter>Header Files\gui\keyboard_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\keyboard_screen\KeyboardViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\keyboard_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings_screen\SettingsPresenter.hpp">
+      <Filter>Header Files\gui\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings_screen\SettingsView.hpp">
+      <Filter>Header Files\gui\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settings_screen\SettingsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\status_screen\StatusPresenter.hpp">
+      <Filter>Header Files\gui\status_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\status_screen\StatusView.hpp">
+      <Filter>Header Files\gui\status_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\status_screen\StatusViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\status_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\about_screen\AboutPresenter.hpp">
+      <Filter>Header Files\gui\about_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\about_screen\AboutView.hpp">
+      <Filter>Header Files\gui\about_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\about_screen\AboutViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\about_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

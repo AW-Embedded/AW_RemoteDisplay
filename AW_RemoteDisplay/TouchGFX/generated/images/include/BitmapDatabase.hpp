@@ -7,7 +7,8 @@
 #include <touchgfx/Bitmap.hpp>
 
 const uint16_t BITMAP_AW_EMBEDDED_LOGOS_TRANSPARENT_25PC_ID = 0;
-const uint16_t BITMAP_BLUE_BACKGROUNDS_MAIN_BG_TEXTURE_480X272PX_ID = 1;
+const uint16_t BITMAP_BACKGROUND_ID = 1;
+const uint16_t BITMAP_BLUE_BACKGROUNDS_MAIN_BG_TEXTURE_480X272PX_ID = 2;
 
 namespace BitmapDatabase
 {

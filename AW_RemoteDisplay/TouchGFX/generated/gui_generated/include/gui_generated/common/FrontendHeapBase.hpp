@@ -14,6 +14,14 @@
 
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
+#include <gui/settings_screen/SettingsView.hpp>
+#include <gui/settings_screen/SettingsPresenter.hpp>
+#include <gui/status_screen/StatusView.hpp>
+#include <gui/status_screen/StatusPresenter.hpp>
+#include <gui/keyboard_screen/KeyboardView.hpp>
+#include <gui/keyboard_screen/KeyboardPresenter.hpp>
+#include <gui/about_screen/AboutView.hpp>
+#include <gui/about_screen/AboutPresenter.hpp>
 
 
 /**
@@ -37,7 +45,11 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MainView,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< SettingsView,
+            touchgfx::meta::TypeList< StatusView,
+            touchgfx::meta::TypeList< KeyboardView,
+            touchgfx::meta::TypeList< AboutView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -50,7 +62,11 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MainPresenter,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< SettingsPresenter,
+            touchgfx::meta::TypeList< StatusPresenter,
+            touchgfx::meta::TypeList< KeyboardPresenter,
+            touchgfx::meta::TypeList< AboutPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**

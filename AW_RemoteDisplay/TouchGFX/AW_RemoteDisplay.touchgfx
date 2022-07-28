@@ -22,6 +22,58 @@
           }
         ],
         "Interactions": []
+      },
+      {
+        "Name": "Settings",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "settingsBG",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "background.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Status",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "statusBG",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "background.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Keyboard",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "keyboardBG",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "background.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "About",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "aboutBG",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_texture_480x272px.png"
+          }
+        ],
+        "Interactions": []
       }
     ],
     "CustomContainerDefinitions": [],
