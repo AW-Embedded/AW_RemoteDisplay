@@ -709,14 +709,54 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Backgrounds_Main_bg_texture_480x272px.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Dark_Buttons_Round_icon_button.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Buttons_Round_icon_button.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Dark_Buttons_Round_icon_button_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Buttons_Round_icon_button_pressed.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_AW_Embedded-logos_transparent_25pc.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_AW_Embedded-logos_transparent_25pc.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_GREENled.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_GREENled.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_OrangeLED.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_OrangeLED.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_RedLED.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_RedLED.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_YellowLED.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_YellowLED.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_background.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_background.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_blueLED.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_blueLED.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_configuration.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_configuration.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>
