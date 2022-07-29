@@ -14,7 +14,7 @@ AboutViewBase::AboutViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
     aboutBG.setXY(0, 0);
-    aboutBG.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_TEXTURE_480X272PX_ID));
+    aboutBG.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
 
     btnAboutHome.setXY(0, 212);
     btnAboutHome.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
@@ -24,7 +24,7 @@ AboutViewBase::AboutViewBase() :
     btnAboutHome.setAction(buttonCallback);
 
     aboutHeader.setXY(211, 0);
-    aboutHeader.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    aboutHeader.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     aboutHeader.setLinespacing(0);
     aboutHeader.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8QF8));
 

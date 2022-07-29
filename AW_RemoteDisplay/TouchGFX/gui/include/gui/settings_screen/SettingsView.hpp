@@ -11,7 +11,9 @@ public:
     virtual ~SettingsView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void wifi_toggle();
 protected:
+    bool wifiEnabled;
 };
 
 #endif // SETTINGSVIEW_HPP

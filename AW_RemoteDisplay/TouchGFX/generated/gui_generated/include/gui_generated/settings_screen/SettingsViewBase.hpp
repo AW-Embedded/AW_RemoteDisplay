@@ -23,6 +23,14 @@ public:
     virtual ~SettingsViewBase() {}
     virtual void setupScreen();
 
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void wifi_toggle()
+    {
+        // Override and implement this function in Settings
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());

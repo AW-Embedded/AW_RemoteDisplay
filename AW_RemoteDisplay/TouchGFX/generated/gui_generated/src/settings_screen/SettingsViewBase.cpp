@@ -84,6 +84,7 @@ SettingsViewBase::SettingsViewBase() :
 
     toggleButtonWiFi.setXY(176, 223);
     toggleButtonWiFi.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_ON_ID));
+    toggleButtonWiFi.setAction(buttonCallback);
 
     textArea1_1_1.setXY(219, 199);
     textArea1_1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -143,6 +144,13 @@ void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //When btnSettingsCancel clicked change screen to Main
         //Go to Main with no screen transition
         application().gotoMainScreenNoTransition();
+    }
+    else if (&src == &toggleButtonWiFi)
+    {
+        //wifi_toggled
+        //When toggleButtonWiFi clicked call virtual function
+        //Call wifi_toggle
+        wifi_toggle();
     }
 }
 

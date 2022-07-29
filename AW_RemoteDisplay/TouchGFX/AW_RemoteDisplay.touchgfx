@@ -501,6 +501,17 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Main"
             }
+          },
+          {
+            "InteractionName": "wifi_toggled",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButtonWiFi"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "wifi_toggle"
+            }
           }
         ]
       },
@@ -666,7 +677,7 @@
             "Name": "aboutBG",
             "Width": 480,
             "Height": 272,
-            "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_texture_480x272px.png"
+            "RelativeFilename": "background.png"
           },
           {
             "Type": "ButtonWithLabel",
@@ -697,6 +708,11 @@
             "Height": 24,
             "TextId": "__SingleUse_8QF8",
             "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
             "AutoSize": true
           }
         ],

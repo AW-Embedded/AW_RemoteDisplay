@@ -14,8 +14,21 @@ public:
     }
 
     void tick();
+
+    void saveWifiState(bool state)
+    {
+        wifiState = state;
+    }
+
+    bool getWifiState()
+    {
+        return wifiState;
+    }
+
 protected:
     ModelListener* modelListener;
+
+    bool wifiState;
 };
 
 #endif // MODEL_HPP

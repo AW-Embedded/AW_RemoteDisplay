@@ -27,6 +27,16 @@ public:
 
     virtual ~SettingsPresenter() {};
 
+    void saveWifiState(bool state)
+    {
+        model->saveWifiState(state);
+    }
+
+    bool getWifiState()
+    {
+        return model->getWifiState();
+    }
+
 private:
     SettingsPresenter();
 
