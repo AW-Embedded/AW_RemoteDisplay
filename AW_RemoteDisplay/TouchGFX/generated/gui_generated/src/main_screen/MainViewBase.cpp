@@ -44,16 +44,17 @@ MainViewBase::MainViewBase() :
     btnMainStatus.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnMainStatus.setAction(buttonCallback);
 
-    mainStateGreen.setXY(450, 10);
+    mainStateGreen.setXY(354, 2);
     mainStateGreen.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
 
-    mainStateOrange.setXY(450, 10);
-    mainStateOrange.setVisible(false);
+    mainStateOrange.setXY(374, 2);
     mainStateOrange.setBitmap(touchgfx::Bitmap(BITMAP_ORANGELED_ID));
 
-    mainStateRed.setXY(450, 10);
-    mainStateRed.setVisible(false);
+    mainStateRed.setXY(394, 2);
     mainStateRed.setBitmap(touchgfx::Bitmap(BITMAP_REDLED_ID));
+
+    mainWifiLogo.setXY(456, 0);
+    mainWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_ID));
 
     add(__background);
     add(mainBG);
@@ -65,6 +66,7 @@ MainViewBase::MainViewBase() :
     add(mainStateGreen);
     add(mainStateOrange);
     add(mainStateRed);
+    add(mainWifiLogo);
 }
 
 void MainViewBase::setupScreen()

@@ -18,7 +18,9 @@ const uint16_t BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID = 8;
 const uint16_t BITMAP_GREENLED_ID = 9;
 const uint16_t BITMAP_ORANGELED_ID = 10;
 const uint16_t BITMAP_REDLED_ID = 11;
-const uint16_t BITMAP_YELLOWLED_ID = 12;
+const uint16_t BITMAP_WIFI_ID = 12;
+const uint16_t BITMAP_WIFI_WHITE_ID = 13;
+const uint16_t BITMAP_YELLOWLED_ID = 14;
 
 namespace BitmapDatabase
 {

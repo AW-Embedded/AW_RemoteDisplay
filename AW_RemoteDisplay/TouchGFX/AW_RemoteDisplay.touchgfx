@@ -84,8 +84,8 @@
           {
             "Type": "Image",
             "Name": "mainStateGreen",
-            "X": 450,
-            "Y": 10,
+            "X": 354,
+            "Y": 2,
             "Width": 20,
             "Height": 20,
             "RelativeFilename": "GREENled.png"
@@ -93,22 +93,28 @@
           {
             "Type": "Image",
             "Name": "mainStateOrange",
-            "X": 450,
-            "Y": 10,
+            "X": 374,
+            "Y": 2,
             "Width": 20,
             "Height": 20,
-            "Visible": false,
             "RelativeFilename": "OrangeLED.png"
           },
           {
             "Type": "Image",
             "Name": "mainStateRed",
-            "X": 450,
-            "Y": 10,
+            "X": 394,
+            "Y": 2,
             "Width": 20,
             "Height": 20,
-            "Visible": false,
             "RelativeFilename": "RedLED.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "mainWifiLogo",
+            "X": 456,
+            "Width": 24,
+            "Height": 24,
+            "RelativeFilename": "wifi.png"
           }
         ],
         "Interactions": [
@@ -543,6 +549,14 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "statusWifiLogo",
+            "X": 456,
+            "Width": 24,
+            "Height": 24,
+            "RelativeFilename": "wifi-white.png"
           }
         ],
         "Interactions": [

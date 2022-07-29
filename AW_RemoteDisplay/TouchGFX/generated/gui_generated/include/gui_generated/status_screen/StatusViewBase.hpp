@@ -31,6 +31,7 @@ protected:
     touchgfx::Image statusBG;
     touchgfx::ButtonWithLabel btnStatusHome;
     touchgfx::TextArea statusHeader;
+    touchgfx::Image statusWifiLogo;
 
 private:
 

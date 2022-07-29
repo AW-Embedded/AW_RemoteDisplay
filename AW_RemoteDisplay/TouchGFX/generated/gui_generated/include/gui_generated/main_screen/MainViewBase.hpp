@@ -38,6 +38,7 @@ protected:
     touchgfx::Image mainStateGreen;
     touchgfx::Image mainStateOrange;
     touchgfx::Image mainStateRed;
+    touchgfx::Image mainWifiLogo;
 
 private:
 

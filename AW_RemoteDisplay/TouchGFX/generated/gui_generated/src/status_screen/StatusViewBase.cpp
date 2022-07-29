@@ -28,10 +28,14 @@ StatusViewBase::StatusViewBase() :
     statusHeader.setLinespacing(0);
     statusHeader.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JWZO));
 
+    statusWifiLogo.setXY(456, 0);
+    statusWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_WHITE_ID));
+
     add(__background);
     add(statusBG);
     add(btnStatusHome);
     add(statusHeader);
+    add(statusWifiLogo);
 }
 
 void StatusViewBase::setupScreen()
