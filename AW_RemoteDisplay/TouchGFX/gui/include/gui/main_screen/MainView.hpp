@@ -15,6 +15,7 @@ public:
 protected:
     virtual void handleTickEvent();
     int tickCounter = 0;
+    bool wifiState = false;
 };
 
 #endif // MAINVIEW_HPP

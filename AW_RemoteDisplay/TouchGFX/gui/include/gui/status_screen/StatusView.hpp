@@ -12,6 +12,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 protected:
+    bool wifiState = false;
 };
 
 #endif // STATUSVIEW_HPP

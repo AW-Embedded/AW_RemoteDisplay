@@ -8,6 +8,10 @@ MainView::MainView()
 void MainView::setupScreen()
 {
     MainViewBase::setupScreen();
+
+    wifiState = presenter->getWifiState();
+    mainWifiLogo.setVisible(wifiState);
+    mainWifiLogo.invalidate();
 }
 
 void MainView::tearDownScreen()

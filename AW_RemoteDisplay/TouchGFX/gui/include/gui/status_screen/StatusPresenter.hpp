@@ -27,6 +27,11 @@ public:
 
     virtual ~StatusPresenter() {};
 
+    bool getWifiState()
+    {
+        return model->getWifiState();
+    }
+
 private:
     StatusPresenter();
 
