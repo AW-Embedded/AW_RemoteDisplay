@@ -13,10 +13,10 @@
         <Translation Language="GB">Save</Translation>
       </Text>
       <Text Id="__SingleUse_TO40" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Disonnected</Translation>
+        <Translation Language="GB" />
       </Text>
-      <Text Id="__SingleUse_PIEH" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">WiFi:&lt;value&gt;</Translation>
+      <Text Id="__SingleUse_PIEH" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_X6LV" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">WiFi</Translation>
@@ -81,7 +81,7 @@
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
   </Typographies>

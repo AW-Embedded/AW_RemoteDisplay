@@ -428,20 +428,19 @@
           {
             "Type": "TextArea",
             "Name": "textAreaWifiState",
-            "X": 153,
+            "X": 117,
             "Y": 33,
-            "Width": 175,
+            "Width": 246,
             "Height": 24,
             "TextId": "__SingleUse_PIEH",
             "TextRotation": "0",
             "Color": {
-              "Red": 255
+              "Green": 255
             },
-            "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_TO40",
               "UseBuffer": true,
-              "BufferSize": 18
+              "BufferSize": 20
             }
           },
           {

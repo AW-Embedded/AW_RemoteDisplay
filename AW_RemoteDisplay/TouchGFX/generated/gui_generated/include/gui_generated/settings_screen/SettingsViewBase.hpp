@@ -63,7 +63,7 @@ protected:
      */
     static const uint16_t TEXTAREASSID_SIZE = 18;
     touchgfx::Unicode::UnicodeChar textAreaSSIDBuffer[TEXTAREASSID_SIZE];
-    static const uint16_t TEXTAREAWIFISTATE_SIZE = 18;
+    static const uint16_t TEXTAREAWIFISTATE_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textAreaWifiStateBuffer[TEXTAREAWIFISTATE_SIZE];
 
 private:

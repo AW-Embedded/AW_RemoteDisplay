@@ -91,12 +91,11 @@ SettingsViewBase::SettingsViewBase() :
     textArea1_1_1.setLinespacing(0);
     textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X6LV));
 
-    textAreaWifiState.setXY(153, 33);
-    textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    textAreaWifiState.setPosition(117, 33, 246, 24);
+    textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
     textAreaWifiState.setLinespacing(0);
     Unicode::snprintf(textAreaWifiStateBuffer, TEXTAREAWIFISTATE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_TO40).getText());
     textAreaWifiState.setWildcard(textAreaWifiStateBuffer);
-    textAreaWifiState.resizeToCurrentText();
     textAreaWifiState.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PIEH));
 
     btnSettingsSave_1.setXY(420, 212);

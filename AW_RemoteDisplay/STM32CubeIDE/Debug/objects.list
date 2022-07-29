@@ -24,6 +24,7 @@
 "./Application/User/generated/FontCache.o"
 "./Application/User/generated/Font_verdana_10_4bpp_0.o"
 "./Application/User/generated/Font_verdana_20_4bpp_0.o"
+"./Application/User/generated/Font_verdana_20_4bpp_4.o"
 "./Application/User/generated/Font_verdana_40_4bpp_0.o"
 "./Application/User/generated/FrontendApplicationBase.o"
 "./Application/User/generated/GeneratedFont.o"
