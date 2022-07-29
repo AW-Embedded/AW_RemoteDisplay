@@ -6,6 +6,39 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_EFNW" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Connect</Translation>
+      </Text>
+      <Text Id="__SingleUse_LQ19" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Save</Translation>
+      </Text>
+      <Text Id="__SingleUse_TO40" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Disonnected</Translation>
+      </Text>
+      <Text Id="__SingleUse_PIEH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">WiFi:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_X6LV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">WiFi</Translation>
+      </Text>
+      <Text Id="__SingleUse_CHWV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Pass</Translation>
+      </Text>
+      <Text Id="__SingleUse_AVRV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SSID</Translation>
+      </Text>
+      <Text Id="__SingleUse_DLZJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB" />
+      </Text>
+      <Text Id="__SingleUse_BAJ3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB" />
+      </Text>
+      <Text Id="__SingleUse_7167" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P5QY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_IMOE" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Settings</Translation>
       </Text>

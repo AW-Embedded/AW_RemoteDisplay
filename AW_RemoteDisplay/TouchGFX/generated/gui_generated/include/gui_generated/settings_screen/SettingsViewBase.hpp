@@ -11,6 +11,10 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
 
 class SettingsViewBase : public touchgfx::View<SettingsPresenter>
 {
@@ -32,6 +36,27 @@ protected:
     touchgfx::ButtonWithLabel btnSettingsCancel;
     touchgfx::ButtonWithLabel btnSettingsSave;
     touchgfx::TextArea settingsHeader;
+    touchgfx::BoxWithBorder boxWithBorderSSID;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButtonSSID;
+    touchgfx::BoxWithBorder boxWithBorderPass;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButtonPass;
+    touchgfx::TextAreaWithOneWildcard textAreaSSID;
+    touchgfx::TextAreaWithOneWildcard textAreaPass;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::ToggleButton toggleButtonWiFi;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextAreaWithOneWildcard textAreaWifiState;
+    touchgfx::ButtonWithLabel btnSettingsSave_1;
+    touchgfx::ButtonWithLabel btnSettingsConnect;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTAREASSID_SIZE = 18;
+    touchgfx::Unicode::UnicodeChar textAreaSSIDBuffer[TEXTAREASSID_SIZE];
+    static const uint16_t TEXTAREAWIFISTATE_SIZE = 18;
+    touchgfx::Unicode::UnicodeChar textAreaWifiStateBuffer[TEXTAREAWIFISTATE_SIZE];
 
 private:
 
@@ -39,11 +64,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 
