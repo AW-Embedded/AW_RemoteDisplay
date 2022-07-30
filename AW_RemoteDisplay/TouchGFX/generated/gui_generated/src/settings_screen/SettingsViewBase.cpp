@@ -45,6 +45,7 @@ SettingsViewBase::SettingsViewBase() :
     flexButtonSSID.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButtonSSID.setPosition(117, 63, 246, 50);
     flexButtonSSID.setAlpha(0);
+    flexButtonSSID.setAction(flexButtonCallback);
 
     boxWithBorderPass.setPosition(117, 123, 246, 50);
     boxWithBorderPass.setColor(touchgfx::Color::getColorFromRGB(158, 158, 158));
@@ -155,4 +156,11 @@ void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
 
 void SettingsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
+    if (&src == &flexButtonSSID)
+    {
+        //SSIDtoKeys
+        //When flexButtonSSID clicked change screen to Keyboard
+        //Go to Keyboard with no screen transition
+        application().gotoKeyboardScreenNoTransition();
+    }
 }

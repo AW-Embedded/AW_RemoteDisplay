@@ -10,7 +10,6 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
 
 class KeyboardViewBase : public touchgfx::View<KeyboardPresenter>
 {
@@ -31,7 +30,6 @@ protected:
     touchgfx::Image keyboardBG;
     touchgfx::ButtonWithLabel btnKeyboardCancel;
     touchgfx::ButtonWithLabel btnKeyboardSave;
-    touchgfx::TextArea keyboardHeader;
 
 private:
 

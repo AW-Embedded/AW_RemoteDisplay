@@ -2,7 +2,8 @@
 
 KeyboardView::KeyboardView()
 {
-
+    keyboard.setPosition(80, 16, 320, 240);
+    add(keyboard);
 }
 
 void KeyboardView::setupScreen()

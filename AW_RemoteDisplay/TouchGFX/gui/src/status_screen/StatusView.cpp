@@ -9,6 +9,7 @@ void StatusView::setupScreen()
 {
     StatusViewBase::setupScreen();
 
+    // Init screen for current WiFi state
     wifiState = presenter->getWifiState();
     statusWifiLogo.setVisible(wifiState);
     statusWifiLogo.invalidate();

@@ -29,6 +29,9 @@ public:
     // Status
     void gotoStatusScreenNoTransition();
 
+    // Keyboard
+    void gotoKeyboardScreenNoTransition();
+
     // About
     void gotoAboutScreenNoTransition();
 
@@ -45,6 +48,9 @@ protected:
 
     // Status
     void gotoStatusScreenNoTransitionImpl();
+
+    // Keyboard
+    void gotoKeyboardScreenNoTransitionImpl();
 
     // About
     void gotoAboutScreenNoTransitionImpl();

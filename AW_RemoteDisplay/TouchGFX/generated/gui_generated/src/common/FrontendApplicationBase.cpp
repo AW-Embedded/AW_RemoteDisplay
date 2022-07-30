@@ -76,6 +76,19 @@ void FrontendApplicationBase::gotoStatusScreenNoTransitionImpl()
     touchgfx::makeTransition<StatusView, StatusPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// Keyboard
+
+void FrontendApplicationBase::gotoKeyboardScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoKeyboardScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoKeyboardScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<KeyboardView, KeyboardPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // About
 
 void FrontendApplicationBase::gotoAboutScreenNoTransition()

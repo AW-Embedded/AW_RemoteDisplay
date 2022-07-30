@@ -10,6 +10,7 @@ void SettingsView::setupScreen()
 {
     SettingsViewBase::setupScreen();
 
+    // Init screen for current WiFi state
     wifiEnabled = presenter->getWifiState();
     toggleButtonWiFi.forceState(wifiEnabled);
     toggleButtonWiFi.invalidate();
@@ -20,6 +21,7 @@ void SettingsView::tearDownScreen()
     SettingsViewBase::tearDownScreen();
 }
 
+// Toggle button click handler for WiFi Enable / Disable
 void SettingsView::wifi_toggle()
 {
     wifiEnabled = toggleButtonWiFi.getState();

@@ -309,6 +309,9 @@
     <ClCompile Include="..\..\generated\gui_generated\src\about_screen\AboutViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\about_screen</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gui\src\common\CustomKeyboard.cpp">
+      <Filter>Source Files\gui\common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml">
@@ -795,6 +798,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\about_screen\AboutViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\about_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\CustomKeyboard.hpp">
+      <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\KeyboardKeyMapping.hpp">
+      <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\KeyboardLayout.hpp">
+      <Filter>Header Files\gui\common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

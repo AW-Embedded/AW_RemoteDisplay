@@ -84,7 +84,7 @@
           {
             "Type": "Image",
             "Name": "mainStateGreen",
-            "X": 354,
+            "X": 430,
             "Y": 2,
             "Width": 20,
             "Height": 20,
@@ -93,7 +93,7 @@
           {
             "Type": "Image",
             "Name": "mainStateOrange",
-            "X": 374,
+            "X": 410,
             "Y": 2,
             "Width": 20,
             "Height": 20,
@@ -102,7 +102,7 @@
           {
             "Type": "Image",
             "Name": "mainStateRed",
-            "X": 394,
+            "X": 390,
             "Y": 2,
             "Width": 20,
             "Height": 20,
@@ -511,6 +511,18 @@
               "Type": "ActionCustom",
               "FunctionName": "wifi_toggle"
             }
+          },
+          {
+            "InteractionName": "SSIDtoKeys",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonSSID"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Keyboard"
+            }
           }
         ]
       },
@@ -636,21 +648,6 @@
               "Blue": 255
             },
             "TextRotation": "0"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "keyboardHeader",
-            "X": 193,
-            "Width": 95,
-            "Height": 24,
-            "TextId": "__SingleUse_0W17",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
           }
         ],
         "Interactions": [

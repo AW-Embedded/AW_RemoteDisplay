@@ -29,16 +29,10 @@ KeyboardViewBase::KeyboardViewBase() :
     btnKeyboardSave.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnKeyboardSave.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
 
-    keyboardHeader.setXY(193, 0);
-    keyboardHeader.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    keyboardHeader.setLinespacing(0);
-    keyboardHeader.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0W17));
-
     add(__background);
     add(keyboardBG);
     add(btnKeyboardCancel);
     add(btnKeyboardSave);
-    add(keyboardHeader);
 }
 
 void KeyboardViewBase::setupScreen()

@@ -3,6 +3,7 @@
 
 #include <gui_generated/keyboard_screen/KeyboardViewBase.hpp>
 #include <gui/keyboard_screen/KeyboardPresenter.hpp>
+#include <gui/common/CustomKeyboard.hpp>
 
 class KeyboardView : public KeyboardViewBase
 {
@@ -12,6 +13,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 protected:
+    CustomKeyboard keyboard;
 };
 
 #endif // KEYBOARDVIEW_HPP

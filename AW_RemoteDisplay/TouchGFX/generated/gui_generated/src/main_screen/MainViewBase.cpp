@@ -44,13 +44,13 @@ MainViewBase::MainViewBase() :
     btnMainStatus.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnMainStatus.setAction(buttonCallback);
 
-    mainStateGreen.setXY(354, 2);
+    mainStateGreen.setXY(430, 2);
     mainStateGreen.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
 
-    mainStateOrange.setXY(374, 2);
+    mainStateOrange.setXY(410, 2);
     mainStateOrange.setBitmap(touchgfx::Bitmap(BITMAP_ORANGELED_ID));
 
-    mainStateRed.setXY(394, 2);
+    mainStateRed.setXY(390, 2);
     mainStateRed.setBitmap(touchgfx::Bitmap(BITMAP_REDLED_ID));
 
     mainWifiLogo.setXY(456, 0);
