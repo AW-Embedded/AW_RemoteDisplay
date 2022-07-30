@@ -57,8 +57,7 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image settingsBG;
-    touchgfx::ButtonWithLabel btnSettingsCancel;
-    touchgfx::ButtonWithLabel btnSettingsSave;
+    touchgfx::ButtonWithLabel btnSettingsHome;
     touchgfx::TextArea settingsHeader;
     touchgfx::BoxWithBorder boxWithBorderSSID;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButtonSSID;
@@ -71,7 +70,6 @@ protected:
     touchgfx::ToggleButton toggleButtonWiFi;
     touchgfx::TextArea textArea1_1_1;
     touchgfx::TextAreaWithOneWildcard textAreaWifiState;
-    touchgfx::ButtonWithLabel btnSettingsSave_1;
     touchgfx::ButtonWithLabel btnSettingsConnect;
 
     /*

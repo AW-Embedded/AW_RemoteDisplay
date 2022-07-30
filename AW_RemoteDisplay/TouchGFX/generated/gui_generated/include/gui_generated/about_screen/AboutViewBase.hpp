@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/AnimatedImage.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 
 class AboutViewBase : public touchgfx::View<AboutPresenter>
@@ -30,7 +31,11 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image aboutBG;
     touchgfx::ButtonWithLabel btnAboutHome;
-    touchgfx::TextArea aboutHeader;
+    touchgfx::Image AW_Logo;
+    touchgfx::Image ST_Logo;
+    touchgfx::AnimatedImage animatedST;
+    touchgfx::Image TGFX_Logo;
+    touchgfx::TextArea textArea1;
 
 private:
 

@@ -12,15 +12,6 @@
             "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_texture_480x272px.png"
           },
           {
-            "Type": "Image",
-            "Name": "mainLOGO",
-            "X": 90,
-            "Y": -14,
-            "Width": 300,
-            "Height": 300,
-            "RelativeFilename": "AW Embedded-logos_transparent_25pc.png"
-          },
-          {
             "Type": "DigitalClock",
             "Name": "digitalClock1",
             "X": 178,
@@ -168,35 +159,14 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "btnSettingsCancel",
-            "Y": 212,
+            "Name": "btnSettingsHome",
+            "X": 420,
+            "Y": 211,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
             "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
             "TextId": "__SingleUse_DUMA",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0"
-          },
-          {
-            "Type": "ButtonWithLabel",
-            "Name": "btnSettingsSave",
-            "X": 420,
-            "Y": 212,
-            "Width": 60,
-            "Height": 60,
-            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
-            "TextId": "__SingleUse_1FA7",
             "ReleasedColor": {
               "Red": 255,
               "Green": 255,
@@ -414,9 +384,9 @@
           {
             "Type": "TextArea",
             "Name": "textArea1_1_1",
-            "X": 219,
+            "X": 215,
             "Y": 199,
-            "Width": 42,
+            "Width": 51,
             "Height": 24,
             "TextId": "__SingleUse_X6LV",
             "TextRotation": "0",
@@ -447,28 +417,6 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "btnSettingsSave_1",
-            "X": 420,
-            "Y": 212,
-            "Width": 60,
-            "Height": 60,
-            "Pressed": "__designer\\Dark_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Dark_Buttons_Round_icon_button.png",
-            "TextId": "__SingleUse_LQ19",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0"
-          },
-          {
-            "Type": "ButtonWithLabel",
             "Name": "btnSettingsConnect",
             "X": 390,
             "Y": 88,
@@ -495,7 +443,7 @@
             "InteractionName": "settingsToMain",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "btnSettingsCancel"
+              "TriggerComponent": "btnSettingsHome"
             },
             "Action": {
               "Type": "ActionGotoScreen",
@@ -756,7 +704,7 @@
             "Name": "aboutBG",
             "Width": 480,
             "Height": 272,
-            "RelativeFilename": "background.png"
+            "RelativeFilename": "__designer\\Blue_Backgrounds_Main_bg_texture_480x272px.png"
           },
           {
             "Type": "ButtonWithLabel",
@@ -780,18 +728,52 @@
             "TextRotation": "0"
           },
           {
+            "Type": "Image",
+            "Name": "AW_Logo",
+            "X": 90,
+            "Y": -14,
+            "Width": 300,
+            "Height": 300,
+            "RelativeFilename": "AW Embedded-logos_transparent_25pc.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "ST_Logo",
+            "X": 17,
+            "Y": 110,
+            "Width": 100,
+            "Height": 52,
+            "RelativeFilename": "st_logo.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "animatedST",
+            "X": 378,
+            "Y": 80,
+            "Width": 85,
+            "Height": 112,
+            "FileNameFirst": "ani_01.png",
+            "FileNameLast": "ani_11.png",
+            "UpdateTicksInterval": 100,
+            "StartOnLoad": true
+          },
+          {
+            "Type": "Image",
+            "Name": "TGFX_Logo",
+            "X": 140,
+            "Y": 224,
+            "Width": 200,
+            "Height": 37,
+            "RelativeFilename": "GFXlogo.png"
+          },
+          {
             "Type": "TextArea",
-            "Name": "aboutHeader",
-            "X": 211,
-            "Width": 59,
+            "Name": "textArea1",
+            "X": 123,
+            "Width": 235,
             "Height": 24,
-            "TextId": "__SingleUse_8QF8",
+            "TextId": "__SingleUse_V3KS",
             "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
             "AutoSize": true
           }
         ],

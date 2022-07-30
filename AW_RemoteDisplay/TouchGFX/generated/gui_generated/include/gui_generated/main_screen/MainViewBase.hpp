@@ -30,7 +30,6 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image mainBG;
-    touchgfx::Image mainLOGO;
     touchgfx::DigitalClock digitalClock1;
     touchgfx::Button btnMainSettings;
     touchgfx::ButtonWithLabel btnMainAbout;

@@ -17,18 +17,12 @@ SettingsViewBase::SettingsViewBase() :
     settingsBG.setXY(0, 0);
     settingsBG.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
 
-    btnSettingsCancel.setXY(0, 212);
-    btnSettingsCancel.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    btnSettingsCancel.setLabelText(touchgfx::TypedText(T___SINGLEUSE_DUMA));
-    btnSettingsCancel.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btnSettingsCancel.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btnSettingsCancel.setAction(buttonCallback);
-
-    btnSettingsSave.setXY(420, 212);
-    btnSettingsSave.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    btnSettingsSave.setLabelText(touchgfx::TypedText(T___SINGLEUSE_1FA7));
-    btnSettingsSave.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btnSettingsSave.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsHome.setXY(420, 211);
+    btnSettingsHome.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
+    btnSettingsHome.setLabelText(touchgfx::TypedText(T___SINGLEUSE_DUMA));
+    btnSettingsHome.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsHome.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsHome.setAction(buttonCallback);
 
     settingsHeader.setXY(199, 0);
     settingsHeader.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -87,7 +81,7 @@ SettingsViewBase::SettingsViewBase() :
     toggleButtonWiFi.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_ON_ID));
     toggleButtonWiFi.setAction(buttonCallback);
 
-    textArea1_1_1.setXY(219, 199);
+    textArea1_1_1.setXY(215, 199);
     textArea1_1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1_1_1.setLinespacing(0);
     textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X6LV));
@@ -99,12 +93,6 @@ SettingsViewBase::SettingsViewBase() :
     textAreaWifiState.setWildcard(textAreaWifiStateBuffer);
     textAreaWifiState.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PIEH));
 
-    btnSettingsSave_1.setXY(420, 212);
-    btnSettingsSave_1.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    btnSettingsSave_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_LQ19));
-    btnSettingsSave_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    btnSettingsSave_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-
     btnSettingsConnect.setXY(390, 88);
     btnSettingsConnect.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     btnSettingsConnect.setLabelText(touchgfx::TypedText(T___SINGLEUSE_EFNW));
@@ -113,8 +101,7 @@ SettingsViewBase::SettingsViewBase() :
 
     add(__background);
     add(settingsBG);
-    add(btnSettingsCancel);
-    add(btnSettingsSave);
+    add(btnSettingsHome);
     add(settingsHeader);
     add(boxWithBorderSSID);
     add(flexButtonSSID);
@@ -127,7 +114,6 @@ SettingsViewBase::SettingsViewBase() :
     add(toggleButtonWiFi);
     add(textArea1_1_1);
     add(textAreaWifiState);
-    add(btnSettingsSave_1);
     add(btnSettingsConnect);
 }
 
@@ -160,10 +146,10 @@ void SettingsViewBase::keyboardSelectedVar(uint8_t value)
 
 void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &btnSettingsCancel)
+    if (&src == &btnSettingsHome)
     {
         //settingsToMain
-        //When btnSettingsCancel clicked change screen to Main
+        //When btnSettingsHome clicked change screen to Main
         //Go to Main with no screen transition
         application().gotoMainScreenNoTransition();
     }

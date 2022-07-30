@@ -799,6 +799,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_AW_Embedded-logos_transparent_25pc.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_GFXlogo.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_GFXlogo.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_GREENled.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_GREENled.cpp</locationURI>
@@ -817,6 +822,61 @@
 			<name>Application/User/generated/image_YellowLED.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_YellowLED.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_01.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_01.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_02.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_02.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_03.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_03.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_04.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_04.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_05.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_05.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_06.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_06.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_07.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_07.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_08.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_08.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_09.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_09.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_10.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_10.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_ani_11.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_ani_11.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_background.cpp</name>
@@ -877,6 +937,11 @@
 			<name>Application/User/generated/image_keyboard_space_highlighted.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_keyboard_space_highlighted.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_st_logo.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_st_logo.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_wifi-white.cpp</name>

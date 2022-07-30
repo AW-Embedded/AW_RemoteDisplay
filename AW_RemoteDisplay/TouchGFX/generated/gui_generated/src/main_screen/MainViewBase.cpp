@@ -16,9 +16,6 @@ MainViewBase::MainViewBase() :
     mainBG.setXY(0, 0);
     mainBG.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_TEXTURE_480X272PX_ID));
 
-    mainLOGO.setXY(90, -14);
-    mainLOGO.setBitmap(touchgfx::Bitmap(BITMAP_AW_EMBEDDED_LOGOS_TRANSPARENT_25PC_ID));
-
     digitalClock1.setPosition(178, 0, 125, 43);
     digitalClock1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     digitalClock1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IDW8));
@@ -58,7 +55,6 @@ MainViewBase::MainViewBase() :
 
     add(__background);
     add(mainBG);
-    add(mainLOGO);
     add(digitalClock1);
     add(btnMainSettings);
     add(btnMainAbout);

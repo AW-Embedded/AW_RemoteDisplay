@@ -14,7 +14,7 @@ AboutViewBase::AboutViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
     aboutBG.setXY(0, 0);
-    aboutBG.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
+    aboutBG.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_TEXTURE_480X272PX_ID));
 
     btnAboutHome.setXY(0, 212);
     btnAboutHome.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
@@ -23,15 +23,33 @@ AboutViewBase::AboutViewBase() :
     btnAboutHome.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnAboutHome.setAction(buttonCallback);
 
-    aboutHeader.setXY(211, 0);
-    aboutHeader.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    aboutHeader.setLinespacing(0);
-    aboutHeader.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8QF8));
+    AW_Logo.setXY(90, -14);
+    AW_Logo.setBitmap(touchgfx::Bitmap(BITMAP_AW_EMBEDDED_LOGOS_TRANSPARENT_25PC_ID));
+
+    ST_Logo.setXY(17, 110);
+    ST_Logo.setBitmap(touchgfx::Bitmap(BITMAP_ST_LOGO_ID));
+
+    animatedST.setXY(378, 80);
+    animatedST.setBitmaps(BITMAP_ANI_01_ID, BITMAP_ANI_11_ID);
+    animatedST.setUpdateTicksInterval(6);
+    animatedST.startAnimation(false, true, false);
+
+    TGFX_Logo.setXY(140, 224);
+    TGFX_Logo.setBitmap(touchgfx::Bitmap(BITMAP_GFXLOGO_ID));
+
+    textArea1.setXY(123, 0);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_V3KS));
 
     add(__background);
     add(aboutBG);
     add(btnAboutHome);
-    add(aboutHeader);
+    add(AW_Logo);
+    add(ST_Logo);
+    add(animatedST);
+    add(TGFX_Logo);
+    add(textArea1);
 }
 
 void AboutViewBase::setupScreen()
