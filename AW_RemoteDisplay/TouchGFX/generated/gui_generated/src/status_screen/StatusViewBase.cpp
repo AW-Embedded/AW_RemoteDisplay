@@ -16,7 +16,7 @@ StatusViewBase::StatusViewBase() :
     statusBG.setXY(0, 0);
     statusBG.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
 
-    btnStatusHome.setXY(0, 212);
+    btnStatusHome.setXY(420, 212);
     btnStatusHome.setBitmaps(touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_DARK_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
     btnStatusHome.setLabelText(touchgfx::TypedText(T___SINGLEUSE_D3BV));
     btnStatusHome.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -30,6 +30,7 @@ StatusViewBase::StatusViewBase() :
 
     statusWifiLogo.setXY(456, 0);
     statusWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_WHITE_ID));
+    statusWifiLogo.setAlpha(50);
 
     add(__background);
     add(statusBG);

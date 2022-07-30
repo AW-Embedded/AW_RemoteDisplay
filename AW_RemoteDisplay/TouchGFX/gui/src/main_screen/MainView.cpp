@@ -12,7 +12,12 @@ void MainView::setupScreen()
 
     // Init screen for current WiFi state
     wifiState = presenter->getWifiState();
-    mainWifiLogo.setVisible(wifiState);
+
+    if(wifiState)
+        mainWifiLogo.setAlpha(255);
+    else
+        mainWifiLogo.setAlpha(50);
+
     mainWifiLogo.invalidate();
 }
 
@@ -23,7 +28,7 @@ void MainView::tearDownScreen()
 
 void MainView::handleTickEvent()
 {
-    bool isGreenVisible;
+    //bool isGreenVisible;
     tickCounter++;
 
     if((tickCounter % 3) == 0)
@@ -31,11 +36,10 @@ void MainView::handleTickEvent()
         dynamicGraph1.addDataPoint((sinf(tickCounter * 0.07f) + 1) * 40 + rand() % 10);
     }
 
-    if((tickCounter % 60) == 0)
-    {
-        isGreenVisible = mainStateGreen.isVisible();
-        mainStateGreen.setVisible(!isGreenVisible);
-        mainStateGreen.invalidate();
-    }
-
+//    if((tickCounter % 60) == 0)
+//    {
+//        isGreenVisible = mainStateGreen.isVisible();
+//        mainStateGreen.setVisible(!isGreenVisible);
+//        mainStateGreen.invalidate();
+//    }
 }

@@ -90,7 +90,7 @@
             "Width": 20,
             "Height": 20,
             "RelativeFilename": "OrangeLED.png",
-            "Alpha": 75
+            "Alpha": 50
           },
           {
             "Type": "Image",
@@ -100,7 +100,7 @@
             "Width": 20,
             "Height": 20,
             "RelativeFilename": "RedLED.png",
-            "Alpha": 75
+            "Alpha": 50
           },
           {
             "Type": "Image",
@@ -108,7 +108,8 @@
             "X": 456,
             "Width": 24,
             "Height": 24,
-            "RelativeFilename": "wifi.png"
+            "RelativeFilename": "wifi.png",
+            "Alpha": 50
           },
           {
             "Type": "BoxWithBorder",
@@ -631,6 +632,7 @@
           {
             "Type": "ButtonWithLabel",
             "Name": "btnStatusHome",
+            "X": 420,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -670,7 +672,8 @@
             "X": 456,
             "Width": 24,
             "Height": 24,
-            "RelativeFilename": "wifi-white.png"
+            "RelativeFilename": "wifi-white.png",
+            "Alpha": 50
           }
         ],
         "Interactions": [

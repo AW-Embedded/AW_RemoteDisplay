@@ -50,14 +50,15 @@ MainViewBase::MainViewBase() :
 
     mainStateOrange.setXY(410, 2);
     mainStateOrange.setBitmap(touchgfx::Bitmap(BITMAP_ORANGELED_ID));
-    mainStateOrange.setAlpha(75);
+    mainStateOrange.setAlpha(50);
 
     mainStateRed.setXY(390, 2);
     mainStateRed.setBitmap(touchgfx::Bitmap(BITMAP_REDLED_ID));
-    mainStateRed.setAlpha(75);
+    mainStateRed.setAlpha(50);
 
     mainWifiLogo.setXY(456, 0);
     mainWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_ID));
+    mainWifiLogo.setAlpha(50);
 
     bwb_graphBG.setPosition(60, 48, 360, 194);
     bwb_graphBG.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
