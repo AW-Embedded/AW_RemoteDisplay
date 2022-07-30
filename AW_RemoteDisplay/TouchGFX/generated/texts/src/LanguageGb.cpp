@@ -13,6 +13,8 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     22, // T_ENTEREDTEXT: "<>"
     91, // T_NUMMODE: "ABC"
     87, // T_ALPHAMODE: "123"
+    22, // T___SINGLEUSE_PS6Q: "<>"
+    22, // T___SINGLEUSE_PNXV: "<>"
     0,  // T___SINGLEUSE_V3KS: "Remote Display Module"
     33, // T___SINGLEUSE_EFNW: "Connect"
     21, // T___SINGLEUSE_TO40: ""

@@ -3,6 +3,7 @@
     "Screens": [
       {
         "Name": "Main",
+        "CanvasBufferSize": 7200,
         "Components": [
           {
             "Type": "Image",
@@ -88,7 +89,8 @@
             "Y": 2,
             "Width": 20,
             "Height": 20,
-            "RelativeFilename": "OrangeLED.png"
+            "RelativeFilename": "OrangeLED.png",
+            "Alpha": 75
           },
           {
             "Type": "Image",
@@ -97,7 +99,8 @@
             "Y": 2,
             "Width": 20,
             "Height": 20,
-            "RelativeFilename": "RedLED.png"
+            "RelativeFilename": "RedLED.png",
+            "Alpha": 75
           },
           {
             "Type": "Image",
@@ -106,6 +109,88 @@
             "Width": 24,
             "Height": 24,
             "RelativeFilename": "wifi.png"
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "bwb_graphBG",
+            "X": 60,
+            "Y": 48,
+            "Width": 360,
+            "Height": 194,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph1",
+            "X": 60,
+            "Y": 48,
+            "Width": 360,
+            "Height": 194,
+            "DataSeed": -1380572221,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "LabelSizeTop": 10,
+            "LabelSizeBottom": 22,
+            "LabelSizeLeft": 34,
+            "PaddingBottom": 10,
+            "PaddingLeft": 10,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 173,
+                "Green": 173,
+                "Blue": 173
+              },
+              "Interval": 20.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_PNXV",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_PS6Q",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           }
         ],
         "Interactions": [

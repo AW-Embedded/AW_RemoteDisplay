@@ -12,6 +12,11 @@
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/GraphElements.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -38,6 +43,13 @@ protected:
     touchgfx::Image mainStateOrange;
     touchgfx::Image mainStateRed;
     touchgfx::Image mainWifiLogo;
+    touchgfx::BoxWithBorder bwb_graphBG;
+    touchgfx::GraphWrapAndClear<100> dynamicGraph1;
+    touchgfx::GraphElementLine dynamicGraph1Line1;
+    touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
+    touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
 
 private:
 
@@ -51,6 +63,11 @@ private:
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // MAINVIEWBASE_HPP
