@@ -28,6 +28,7 @@ KeyboardViewBase::KeyboardViewBase() :
     btnKeyboardSave.setLabelText(touchgfx::TypedText(T___SINGLEUSE_022I));
     btnKeyboardSave.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnKeyboardSave.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnKeyboardSave.setAction(buttonCallback);
 
     add(__background);
     add(keyboardBG);
@@ -46,6 +47,18 @@ void KeyboardViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
     {
         //keyboardToSettings
         //When btnKeyboardCancel clicked change screen to Settings
+        //Go to Settings with no screen transition
+        application().gotoSettingsScreenNoTransition();
+    }
+    else if (&src == &btnKeyboardSave)
+    {
+        //KeyboardOK
+        //When btnKeyboardSave clicked call virtual function
+        //Call getBuffer
+        getBuffer();
+
+        //saveToSettings
+        //When KeyboardOK completed change screen to Settings
         //Go to Settings with no screen transition
         application().gotoSettingsScreenNoTransition();
     }

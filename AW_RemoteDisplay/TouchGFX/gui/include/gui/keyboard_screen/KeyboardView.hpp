@@ -12,6 +12,8 @@ public:
     virtual ~KeyboardView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    virtual void getBuffer();
 protected:
     CustomKeyboard keyboard;
 };

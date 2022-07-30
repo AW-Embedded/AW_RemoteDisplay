@@ -18,6 +18,14 @@ public:
     virtual ~KeyboardViewBase() {}
     virtual void setupScreen();
 
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void getBuffer()
+    {
+        // Override and implement this function in Keyboard
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());

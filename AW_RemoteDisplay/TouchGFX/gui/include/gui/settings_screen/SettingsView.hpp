@@ -12,6 +12,8 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void wifi_toggle();
+    virtual void keyboardSelected(uint8_t value);
+    virtual void updateScreen();
 protected:
     bool wifiEnabled;
 };

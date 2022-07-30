@@ -24,9 +24,25 @@ public:
     virtual void setupScreen();
 
     /*
+     * Custom Actions
+     */
+    virtual void keyboardSelectedVar(uint8_t value);
+    virtual void afterTransition();
+
+    /*
      * Virtual Action Handlers
      */
     virtual void wifi_toggle()
+    {
+        // Override and implement this function in Settings
+    }
+
+    virtual void keyboardSelected(uint8_t value)
+    {
+        // Override and implement this function in Settings
+    }
+
+    virtual void updateScreen()
     {
         // Override and implement this function in Settings
     }
@@ -63,6 +79,8 @@ protected:
      */
     static const uint16_t TEXTAREASSID_SIZE = 18;
     touchgfx::Unicode::UnicodeChar textAreaSSIDBuffer[TEXTAREASSID_SIZE];
+    static const uint16_t TEXTAREAPASS_SIZE = 18;
+    touchgfx::Unicode::UnicodeChar textAreaPassBuffer[TEXTAREAPASS_SIZE];
     static const uint16_t TEXTAREAWIFISTATE_SIZE = 20;
     touchgfx::Unicode::UnicodeChar textAreaWifiStateBuffer[TEXTAREAWIFISTATE_SIZE];
 

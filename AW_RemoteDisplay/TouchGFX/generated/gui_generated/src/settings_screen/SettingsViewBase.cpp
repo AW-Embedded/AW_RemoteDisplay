@@ -57,20 +57,20 @@ SettingsViewBase::SettingsViewBase() :
     flexButtonPass.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButtonPass.setPosition(117, 123, 246, 50);
     flexButtonPass.setAlpha(0);
+    flexButtonPass.setAction(flexButtonCallback);
 
-    textAreaSSID.setXY(123, 76);
+    textAreaSSID.setPosition(123, 76, 234, 26);
     textAreaSSID.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textAreaSSID.setLinespacing(0);
     Unicode::snprintf(textAreaSSIDBuffer, TEXTAREASSID_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_BAJ3).getText());
     textAreaSSID.setWildcard(textAreaSSIDBuffer);
-    textAreaSSID.resizeToCurrentText();
     textAreaSSID.setTypedText(touchgfx::TypedText(T___SINGLEUSE_P5QY));
 
-    textAreaPass.setXY(123, 136);
+    textAreaPass.setPosition(123, 136, 234, 26);
     textAreaPass.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textAreaPass.setLinespacing(0);
-    textAreaPass.setWildcard(touchgfx::TypedText(T___SINGLEUSE_DLZJ).getText());
-    textAreaPass.resizeToCurrentText();
+    Unicode::snprintf(textAreaPassBuffer, TEXTAREAPASS_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_DLZJ).getText());
+    textAreaPass.setWildcard(textAreaPassBuffer);
     textAreaPass.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7167));
 
     textArea1.setXY(60, 76);
@@ -136,6 +136,28 @@ void SettingsViewBase::setupScreen()
 
 }
 
+//Called when the screen transition ends
+void SettingsViewBase::afterTransition()
+{
+    //updateScreen
+    //When screen transition ends call virtual function
+    //Call updateScreen
+    updateScreen();
+}
+
+void SettingsViewBase::keyboardSelectedVar(uint8_t value)
+{
+    //keyboardSelected
+    //When keyboardSelectedVar is called call virtual function
+    //Call keyboardSelected
+    keyboardSelected(value);
+
+    //gotoKeyboard
+    //When keyboardSelected completed change screen to Keyboard
+    //Go to Keyboard with no screen transition
+    application().gotoKeyboardScreenNoTransition();
+}
+
 void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &btnSettingsCancel)
@@ -158,9 +180,16 @@ void SettingsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonC
 {
     if (&src == &flexButtonSSID)
     {
-        //SSIDtoKeys
-        //When flexButtonSSID clicked change screen to Keyboard
-        //Go to Keyboard with no screen transition
-        application().gotoKeyboardScreenNoTransition();
+        //ButtonSSID
+        //When flexButtonSSID clicked call keyboardSelectedVar on Settings
+        //Call keyboardSelectedVar
+        keyboardSelectedVar(0);
+    }
+    else if (&src == &flexButtonPass)
+    {
+        //ButtonPass
+        //When flexButtonPass clicked call keyboardSelectedVar on Settings
+        //Call keyboardSelectedVar
+        keyboardSelectedVar(1);
     }
 }

@@ -30,6 +30,7 @@ public:
      */
     void setTouchable(bool touch);
 
+    Unicode::UnicodeChar* getBuffer();
 private:
     /*
      * The size of the buffer that is used by the keyboard.

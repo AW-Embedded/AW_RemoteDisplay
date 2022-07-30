@@ -343,10 +343,10 @@
             "Name": "textAreaSSID",
             "X": 123,
             "Y": 76,
-            "Height": 24,
+            "Width": 234,
+            "Height": 26,
             "TextId": "__SingleUse_P5QY",
             "TextRotation": "0",
-            "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_BAJ3",
               "UseBuffer": true,
@@ -358,12 +358,14 @@
             "Name": "textAreaPass",
             "X": 123,
             "Y": 136,
-            "Height": 24,
+            "Width": 234,
+            "Height": 26,
             "TextId": "__SingleUse_7167",
             "TextRotation": "0",
-            "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_DLZJ"
+              "TextId": "__SingleUse_DLZJ",
+              "UseBuffer": true,
+              "BufferSize": 18
             }
           },
           {
@@ -513,16 +515,73 @@
             }
           },
           {
-            "InteractionName": "SSIDtoKeys",
+            "InteractionName": "ButtonSSID",
+            "HasCompletedTrigger": true,
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "flexButtonSSID"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call Settings keyboardSelectedVar",
+              "ParameterValue": "0",
+              "ActionComponent": "Settings"
+            }
+          },
+          {
+            "InteractionName": "ButtonPass",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonPass"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call Settings keyboardSelectedVar",
+              "ParameterValue": "1",
+              "ActionComponent": "Settings"
+            }
+          },
+          {
+            "InteractionName": "keyboardSelected",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call Settings keyboardSelectedVar"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "keyboardSelected"
+            }
+          },
+          {
+            "InteractionName": "gotoKeyboard",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "keyboardSelected"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Keyboard"
             }
+          },
+          {
+            "InteractionName": "updateScreen",
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "updateScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "keyboardSelectedVar",
+            "HasValue": true,
+            "ValueType": "uint8_t"
           }
         ]
       },
@@ -656,6 +715,30 @@
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "btnKeyboardCancel"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          },
+          {
+            "InteractionName": "KeyboardOK",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnKeyboardSave"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "getBuffer"
+            }
+          },
+          {
+            "InteractionName": "saveToSettings",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "KeyboardOK"
             },
             "Action": {
               "Type": "ActionGotoScreen",

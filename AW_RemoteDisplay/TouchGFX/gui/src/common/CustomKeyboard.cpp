@@ -122,3 +122,9 @@ void CustomKeyboard::setTouchable(bool touch)
     Container::setTouchable(touch);
     keyboard.setTouchable(touch);
 }
+
+// Return a pointer to the keyboard buffer
+Unicode::UnicodeChar* CustomKeyboard::getBuffer()
+{
+    return keyboard.getBuffer();
+}
