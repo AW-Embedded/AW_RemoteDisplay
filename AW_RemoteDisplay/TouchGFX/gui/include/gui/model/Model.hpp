@@ -1,6 +1,8 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
+#include <touchgfx/hal/Types.hpp>
+
 class ModelListener;
 
 class Model
@@ -25,11 +27,23 @@ public:
         return wifiState;
     }
 
+    uint8_t getMinutes()
+    {
+        return minute;
+    }
+
+    uint8_t getHours()
+    {
+        return hour;
+    }
+
 protected:
     ModelListener* modelListener;
 
     int tickCounter = 0;
     bool wifiState;
+    uint8_t hour = 0;
+    uint8_t minute = 0;
 };
 
 #endif // MODEL_HPP

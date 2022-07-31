@@ -34,6 +34,16 @@ public:
         return model->getWifiState();
     }
 
+    uint8_t getMinutes()
+    {
+        return model->getMinutes();
+    }
+
+    uint8_t getHours()
+    {
+        return model->getHours();
+    }
+
 private:
     MainPresenter();
 

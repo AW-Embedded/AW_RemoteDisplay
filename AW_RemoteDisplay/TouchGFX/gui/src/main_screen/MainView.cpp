@@ -10,6 +10,10 @@ void MainView::setupScreen()
 {
     MainViewBase::setupScreen();
 
+    // Get last time from model on entry
+    digitalClock1.setTime24Hour(presenter->getHours(), presenter->getMinutes(), 0);
+    digitalClock1.invalidate();
+
     // Init screen for current WiFi state
     wifiState = presenter->getWifiState();
 
@@ -47,4 +51,5 @@ void MainView::handleTickEvent()
 void MainView::updateTime(uint8_t hour, uint8_t minute, uint8_t second)
 {
     digitalClock1.setTime24Hour(hour, minute, second);
+    digitalClock1.invalidate();
 }
