@@ -37,7 +37,10 @@ void MainView::handleTickEvent()
 
     if((tickCounter % 3) == 0)
     {
-        dynamicGraph1.addDataPoint((sinf(tickCounter * 0.07f) + 1) * 40 + rand() % 10);
+        dynamicGraph1.addDataPoint((sinf(tickCounter * 0.1f) + 1) * 40 + rand() % 10);
+        dynamicGraph2.addDataPoint((sinf(tickCounter * 0.07f) + 1) * 10 + rand() % 10);
+        dynamicGraph3.addDataPoint((sinf(tickCounter * 0.05f) + 1) * 20 + rand() % 10);
+        dynamicGraph4.addDataPoint((sinf(tickCounter * 0.03f) + 1) * 30 + rand() % 10);
     }
 
 //    if((tickCounter % 60) == 0)

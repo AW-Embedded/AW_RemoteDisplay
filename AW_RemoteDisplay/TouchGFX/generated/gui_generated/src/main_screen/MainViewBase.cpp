@@ -60,39 +60,161 @@ MainViewBase::MainViewBase() :
     mainWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_ID));
     mainWifiLogo.setAlpha(50);
 
-    bwb_graphBG.setPosition(60, 48, 360, 194);
+    bwb_graphBG.setPosition(60, 48, 180, 97);
     bwb_graphBG.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     bwb_graphBG.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     bwb_graphBG.setBorderSize(1);
 
     dynamicGraph1.setScale(1);
-    dynamicGraph1.setPosition(60, 48, 360, 194);
-    dynamicGraph1.setGraphAreaMargin(10, 34, 0, 22);
-    dynamicGraph1.setGraphAreaPadding(0, 10, 0, 10);
+    dynamicGraph1.setPosition(60, 48, 180, 97);
+    dynamicGraph1.setGraphAreaMargin(5, 22, 0, 14);
+    dynamicGraph1.setGraphAreaPadding(5, 10, 0, 0);
     dynamicGraph1.setGraphRangeY(0, 100);
 
     dynamicGraph1MajorYAxisGrid.setScale(1);
-    dynamicGraph1MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(173, 173, 173));
+    dynamicGraph1MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
     dynamicGraph1MajorYAxisGrid.setInterval(20);
     dynamicGraph1MajorYAxisGrid.setLineWidth(1);
     dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
 
     dynamicGraph1MajorXAxisLabel.setScale(1);
-    dynamicGraph1MajorXAxisLabel.setInterval(10);
-    dynamicGraph1MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_PNXV));
-    dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1MajorXAxisLabel.setInterval(25);
+    dynamicGraph1MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_FDR1));
+    dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     dynamicGraph1.addBottomElement(dynamicGraph1MajorXAxisLabel);
 
     dynamicGraph1MajorYAxisLabel.setScale(1);
-    dynamicGraph1MajorYAxisLabel.setInterval(10);
+    dynamicGraph1MajorYAxisLabel.setInterval(20);
     dynamicGraph1MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_PS6Q));
-    dynamicGraph1MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     dynamicGraph1.addLeftElement(dynamicGraph1MajorYAxisLabel);
 
-    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFromRGB(196, 22, 22));
     dynamicGraph1Line1.setPainter(dynamicGraph1Line1Painter);
     dynamicGraph1Line1.setLineWidth(2);
     dynamicGraph1.addGraphElement(dynamicGraph1Line1);
+
+    bwb_graphBG_1.setPosition(240, 48, 180, 97);
+    bwb_graphBG_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bwb_graphBG_1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    bwb_graphBG_1.setBorderSize(1);
+
+    bwb_graphBG_2.setPosition(60, 145, 180, 97);
+    bwb_graphBG_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bwb_graphBG_2.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    bwb_graphBG_2.setBorderSize(1);
+
+    bwb_graphBG_3.setPosition(240, 145, 180, 97);
+    bwb_graphBG_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    bwb_graphBG_3.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    bwb_graphBG_3.setBorderSize(1);
+
+    dynamicGraph2.setScale(1);
+    dynamicGraph2.setPosition(240, 48, 180, 97);
+    dynamicGraph2.setGraphAreaMargin(5, 22, 0, 14);
+    dynamicGraph2.setGraphAreaPadding(5, 10, 0, 0);
+    dynamicGraph2.setGraphRangeY(0, 100);
+
+    dynamicGraph2MajorYAxisGrid.setScale(1);
+    dynamicGraph2MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
+    dynamicGraph2MajorYAxisGrid.setInterval(20);
+    dynamicGraph2MajorYAxisGrid.setLineWidth(1);
+    dynamicGraph2.addGraphElement(dynamicGraph2MajorYAxisGrid);
+
+    dynamicGraph2MajorXAxisLabel.setScale(1);
+    dynamicGraph2MajorXAxisLabel.setInterval(25);
+    dynamicGraph2MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_CUQD));
+    dynamicGraph2MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph2.addBottomElement(dynamicGraph2MajorXAxisLabel);
+
+    dynamicGraph2MajorYAxisLabel.setScale(1);
+    dynamicGraph2MajorYAxisLabel.setInterval(20);
+    dynamicGraph2MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_KGVV));
+    dynamicGraph2MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph2.addLeftElement(dynamicGraph2MajorYAxisLabel);
+
+    dynamicGraph2Line1Painter.setColor(touchgfx::Color::getColorFromRGB(0, 21, 255));
+    dynamicGraph2Line1.setPainter(dynamicGraph2Line1Painter);
+    dynamicGraph2Line1.setLineWidth(2);
+    dynamicGraph2.addGraphElement(dynamicGraph2Line1);
+
+    dynamicGraph3.setScale(1);
+    dynamicGraph3.setPosition(60, 145, 180, 97);
+    dynamicGraph3.setGraphAreaMargin(5, 22, 0, 14);
+    dynamicGraph3.setGraphAreaPadding(5, 10, 0, 0);
+    dynamicGraph3.setGraphRangeY(0, 100);
+
+    dynamicGraph3MajorYAxisGrid.setScale(1);
+    dynamicGraph3MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
+    dynamicGraph3MajorYAxisGrid.setInterval(20);
+    dynamicGraph3MajorYAxisGrid.setLineWidth(1);
+    dynamicGraph3.addGraphElement(dynamicGraph3MajorYAxisGrid);
+
+    dynamicGraph3MajorXAxisLabel.setScale(1);
+    dynamicGraph3MajorXAxisLabel.setInterval(25);
+    dynamicGraph3MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_CQ8F));
+    dynamicGraph3MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph3.addBottomElement(dynamicGraph3MajorXAxisLabel);
+
+    dynamicGraph3MajorYAxisLabel.setScale(1);
+    dynamicGraph3MajorYAxisLabel.setInterval(20);
+    dynamicGraph3MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_ITIA));
+    dynamicGraph3MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph3.addLeftElement(dynamicGraph3MajorYAxisLabel);
+
+    dynamicGraph3Line1Painter.setColor(touchgfx::Color::getColorFromRGB(42, 196, 22));
+    dynamicGraph3Line1.setPainter(dynamicGraph3Line1Painter);
+    dynamicGraph3Line1.setLineWidth(2);
+    dynamicGraph3.addGraphElement(dynamicGraph3Line1);
+
+    dynamicGraph4.setScale(1);
+    dynamicGraph4.setPosition(240, 145, 180, 97);
+    dynamicGraph4.setGraphAreaMargin(5, 22, 0, 14);
+    dynamicGraph4.setGraphAreaPadding(5, 10, 0, 0);
+    dynamicGraph4.setGraphRangeY(0, 100);
+
+    dynamicGraph4MajorYAxisGrid.setScale(1);
+    dynamicGraph4MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
+    dynamicGraph4MajorYAxisGrid.setInterval(20);
+    dynamicGraph4MajorYAxisGrid.setLineWidth(1);
+    dynamicGraph4.addGraphElement(dynamicGraph4MajorYAxisGrid);
+
+    dynamicGraph4MajorXAxisLabel.setScale(1);
+    dynamicGraph4MajorXAxisLabel.setInterval(25);
+    dynamicGraph4MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_O8ZW));
+    dynamicGraph4MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph4.addBottomElement(dynamicGraph4MajorXAxisLabel);
+
+    dynamicGraph4MajorYAxisLabel.setScale(1);
+    dynamicGraph4MajorYAxisLabel.setInterval(20);
+    dynamicGraph4MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_CO6J));
+    dynamicGraph4MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph4.addLeftElement(dynamicGraph4MajorYAxisLabel);
+
+    dynamicGraph4Line1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 140, 0));
+    dynamicGraph4Line1.setPainter(dynamicGraph4Line1Painter);
+    dynamicGraph4Line1.setLineWidth(2);
+    dynamicGraph4.addGraphElement(dynamicGraph4Line1);
+
+    textArea1.setXY(35, 72);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0BJR));
+
+    textArea1_1.setXY(35, 169);
+    textArea1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1.setLinespacing(0);
+    textArea1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IBXL));
+
+    textArea1_1_1.setXY(420, 72);
+    textArea1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1_1.setLinespacing(0);
+    textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CVBW));
+
+    textArea1_1_2.setXY(420, 169);
+    textArea1_1_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1_2.setLinespacing(0);
+    textArea1_1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XSLF));
 
     add(__background);
     add(mainBG);
@@ -106,6 +228,16 @@ MainViewBase::MainViewBase() :
     add(mainWifiLogo);
     add(bwb_graphBG);
     add(dynamicGraph1);
+    add(bwb_graphBG_1);
+    add(bwb_graphBG_2);
+    add(bwb_graphBG_3);
+    add(dynamicGraph2);
+    add(dynamicGraph3);
+    add(dynamicGraph4);
+    add(textArea1);
+    add(textArea1_1);
+    add(textArea1_1_1);
+    add(textArea1_1_2);
 }
 
 void MainViewBase::setupScreen()

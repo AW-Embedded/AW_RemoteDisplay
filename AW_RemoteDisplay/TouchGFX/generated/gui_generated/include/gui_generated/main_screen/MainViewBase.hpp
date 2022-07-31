@@ -17,6 +17,7 @@
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -50,6 +51,31 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
+    touchgfx::BoxWithBorder bwb_graphBG_1;
+    touchgfx::BoxWithBorder bwb_graphBG_2;
+    touchgfx::BoxWithBorder bwb_graphBG_3;
+    touchgfx::GraphWrapAndClear<100> dynamicGraph2;
+    touchgfx::GraphElementLine dynamicGraph2Line1;
+    touchgfx::PainterRGB565 dynamicGraph2Line1Painter;
+    touchgfx::GraphElementGridY dynamicGraph2MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph2MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph2MajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<100> dynamicGraph3;
+    touchgfx::GraphElementLine dynamicGraph3Line1;
+    touchgfx::PainterRGB565 dynamicGraph3Line1Painter;
+    touchgfx::GraphElementGridY dynamicGraph3MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph3MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph3MajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<100> dynamicGraph4;
+    touchgfx::GraphElementLine dynamicGraph4Line1;
+    touchgfx::PainterRGB565 dynamicGraph4Line1Painter;
+    touchgfx::GraphElementGridY dynamicGraph4MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph4MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextArea textArea1_1_2;
 
 private:
 

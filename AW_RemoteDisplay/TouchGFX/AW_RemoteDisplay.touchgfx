@@ -116,8 +116,8 @@
             "Name": "bwb_graphBG",
             "X": 60,
             "Y": 48,
-            "Width": 360,
-            "Height": 194,
+            "Width": 180,
+            "Height": 97,
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -130,68 +130,312 @@
             "Name": "dynamicGraph1",
             "X": 60,
             "Y": 48,
-            "Width": 360,
-            "Height": 194,
+            "Width": 180,
+            "Height": 97,
             "DataSeed": -1380572221,
             "NumberOfValues": 100,
             "MaxY": 100.0,
             "Precision": "1",
             "LastIndex": 99,
             "XAxisScale": 1.0,
-            "LabelSizeTop": 10,
-            "LabelSizeBottom": 22,
-            "LabelSizeLeft": 34,
-            "PaddingBottom": 10,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 14,
+            "LabelSizeLeft": 22,
+            "PaddingTop": 5,
             "PaddingLeft": 10,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
               {
                 "Type": "LineDrawer",
                 "LineWidth": 2,
-                "FileNameImage": "",
                 "Color": {
-                  "Red": 20,
-                  "Green": 151,
-                  "Blue": 197
+                  "Red": 196,
+                  "Green": 22,
+                  "Blue": 22
                 }
               }
             ],
             "YAxisGrid": {
               "Type": "GraphGrid",
               "Color": {
-                "Red": 173,
-                "Green": 173,
-                "Blue": 173
+                "Red": 153,
+                "Green": 153,
+                "Blue": 153
               },
               "Interval": 20.0,
               "LineWidth": 1
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 10.0,
+              "Interval": 25.0,
               "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "__SingleUse_PNXV",
+              "TextId": "__SingleUse_FDR1",
               "TextRotation": "0",
               "Position": "Bottom"
             },
             "YAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 10.0,
+              "Interval": 20.0,
               "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
               "TextId": "__SingleUse_PS6Q",
               "TextRotation": "0",
               "Position": "Left"
             }
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "bwb_graphBG_1",
+            "X": 240,
+            "Y": 48,
+            "Width": 180,
+            "Height": 97,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "bwb_graphBG_2",
+            "X": 60,
+            "Y": 145,
+            "Width": 180,
+            "Height": 97,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "bwb_graphBG_3",
+            "X": 240,
+            "Y": 145,
+            "Width": 180,
+            "Height": 97,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph2",
+            "X": 240,
+            "Y": 48,
+            "Width": 180,
+            "Height": 97,
+            "DataSeed": -1380572221,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 14,
+            "LabelSizeLeft": 22,
+            "PaddingTop": 5,
+            "PaddingLeft": 10,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Green": 21,
+                  "Blue": 255
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 153,
+                "Green": 153,
+                "Blue": 153
+              },
+              "Interval": 20.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_CUQD",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 20.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_KGVV",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph3",
+            "X": 60,
+            "Y": 145,
+            "Width": 180,
+            "Height": 97,
+            "DataSeed": -1380572221,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 14,
+            "LabelSizeLeft": 22,
+            "PaddingTop": 5,
+            "PaddingLeft": 10,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 42,
+                  "Green": 196,
+                  "Blue": 22
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 153,
+                "Green": 153,
+                "Blue": 153
+              },
+              "Interval": 20.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_CQ8F",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 20.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_ITIA",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "dynamicGraph4",
+            "X": 240,
+            "Y": 145,
+            "Width": 180,
+            "Height": 97,
+            "DataSeed": -1380572221,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 14,
+            "LabelSizeLeft": 22,
+            "PaddingTop": 5,
+            "PaddingLeft": 10,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 255,
+                  "Green": 140
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 153,
+                "Green": 153,
+                "Blue": 153
+              },
+              "Interval": 20.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_O8ZW",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 20.0,
+              "DecimalSeparator": "Point",
+              "TextId": "__SingleUse_CO6J",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 35,
+            "Y": 72,
+            "Width": 25,
+            "Height": 49,
+            "TextId": "__SingleUse_0BJR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 35,
+            "Y": 169,
+            "Width": 25,
+            "Height": 49,
+            "TextId": "__SingleUse_IBXL",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 420,
+            "Y": 72,
+            "Width": 25,
+            "Height": 49,
+            "TextId": "__SingleUse_CVBW",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2",
+            "X": 420,
+            "Y": 169,
+            "Width": 25,
+            "Height": 49,
+            "TextId": "__SingleUse_XSLF",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
         "Interactions": [
