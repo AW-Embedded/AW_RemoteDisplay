@@ -44,6 +44,8 @@ protected:
     bool wifiState;
     uint8_t hour = 0;
     uint8_t minute = 0;
+
+    void timeUpdate();
 };
 
 #endif // MODEL_HPP
