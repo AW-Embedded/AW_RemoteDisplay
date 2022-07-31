@@ -43,3 +43,8 @@ void MainView::handleTickEvent()
 //        mainStateGreen.invalidate();
 //    }
 }
+
+void MainView::updateTime(uint8_t hour, uint8_t minute, uint8_t second)
+{
+    digitalClock1.setTime24Hour(hour, minute, second);
+}

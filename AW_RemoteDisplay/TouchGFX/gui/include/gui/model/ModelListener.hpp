@@ -2,6 +2,7 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
+#include <touchgfx/hal/Types.hpp>
 
 class ModelListener
 {
@@ -14,6 +15,8 @@ public:
     {
         model = m;
     }
+
+    virtual void updateTime(uint8_t hour, uint8_t minute, uint8_t second) {}
 protected:
     Model* model;
 };

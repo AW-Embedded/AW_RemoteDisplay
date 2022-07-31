@@ -27,6 +27,8 @@ public:
 
     virtual ~MainPresenter() {};
 
+    void updateTime(uint8_t hour, uint8_t minute, uint8_t second);
+
     bool getWifiState()
     {
         return model->getWifiState();

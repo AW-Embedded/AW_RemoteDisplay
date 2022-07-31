@@ -16,3 +16,8 @@ void MainPresenter::deactivate()
 {
 
 }
+
+void MainPresenter::updateTime(uint8_t hour, uint8_t minute, uint8_t second)
+{
+    view.updateTime(hour, minute, second);
+}

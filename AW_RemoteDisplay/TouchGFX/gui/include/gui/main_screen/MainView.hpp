@@ -11,7 +11,8 @@ public:
     virtual ~MainView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-	
+    void updateTime(uint8_t hour, uint8_t minute, uint8_t second);
+
 protected:
     virtual void handleTickEvent();
     int tickCounter = 0;

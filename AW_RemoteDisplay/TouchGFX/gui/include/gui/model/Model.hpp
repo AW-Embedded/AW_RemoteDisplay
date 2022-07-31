@@ -28,6 +28,7 @@ public:
 protected:
     ModelListener* modelListener;
 
+    int tickCounter = 0;
     bool wifiState;
 };
 
