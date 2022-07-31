@@ -13,11 +13,18 @@ void StatusView::setupScreen()
     wifiState = presenter->getWifiState();
 
     if(wifiState)
+    {
         statusWifiLogo.setAlpha(255);
+        statusWifiCross.setVisible(false);
+    }
     else
+    {
         statusWifiLogo.setAlpha(50);
+        statusWifiCross.setVisible(true);
+    }
 
     statusWifiLogo.invalidate();
+    statusWifiCross.invalidate();
 }
 
 void StatusView::tearDownScreen()

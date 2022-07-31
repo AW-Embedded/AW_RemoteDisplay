@@ -436,6 +436,22 @@
             "TextId": "__SingleUse_XSLF",
             "TextRotation": "0",
             "AutoSize": true
+          },
+          {
+            "Type": "Line",
+            "Name": "mainWifiCross",
+            "X": 456,
+            "Width": 24,
+            "Height": 24,
+            "Color": {
+              "Red": 255
+            },
+            "StartX": 5.0,
+            "StartY": 5.0,
+            "EndX": 19.0,
+            "EndY": 19.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
           }
         ],
         "Interactions": [
@@ -865,6 +881,7 @@
       },
       {
         "Name": "Status",
+        "CanvasBufferSize": 7200,
         "Components": [
           {
             "Type": "Image",
@@ -918,6 +935,22 @@
             "Height": 24,
             "RelativeFilename": "wifi-white.png",
             "Alpha": 50
+          },
+          {
+            "Type": "Line",
+            "Name": "statusWifiCross",
+            "X": 456,
+            "Width": 24,
+            "Height": 24,
+            "Color": {
+              "Red": 255
+            },
+            "StartX": 5.0,
+            "StartY": 5.0,
+            "EndX": 19.0,
+            "EndY": 19.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
           }
         ],
         "Interactions": [

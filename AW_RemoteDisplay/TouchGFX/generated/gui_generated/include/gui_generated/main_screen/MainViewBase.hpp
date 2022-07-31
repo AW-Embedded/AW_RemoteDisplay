@@ -18,6 +18,7 @@
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -76,6 +77,8 @@ protected:
     touchgfx::TextArea textArea1_1;
     touchgfx::TextArea textArea1_1_1;
     touchgfx::TextArea textArea1_1_2;
+    touchgfx::Line mainWifiCross;
+    touchgfx::PainterRGB565 mainWifiCrossPainter;
 
 private:
 

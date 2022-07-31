@@ -5,10 +5,14 @@
 #include <touchgfx/Color.hpp>
 #include <BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
+
 
 StatusViewBase::StatusViewBase() :
     buttonCallback(this, &StatusViewBase::buttonCallbackHandler)
 {
+
+    touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
 
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -32,11 +36,20 @@ StatusViewBase::StatusViewBase() :
     statusWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_WHITE_ID));
     statusWifiLogo.setAlpha(50);
 
+    statusWifiCross.setPosition(456, 0, 24, 24);
+    statusWifiCrossPainter.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    statusWifiCross.setPainter(statusWifiCrossPainter);
+    statusWifiCross.setStart(5, 5);
+    statusWifiCross.setEnd(19, 19);
+    statusWifiCross.setLineWidth(2);
+    statusWifiCross.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
+
     add(__background);
     add(statusBG);
     add(btnStatusHome);
     add(statusHeader);
     add(statusWifiLogo);
+    add(statusWifiCross);
 }
 
 void StatusViewBase::setupScreen()

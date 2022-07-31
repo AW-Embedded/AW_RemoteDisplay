@@ -18,11 +18,18 @@ void MainView::setupScreen()
     wifiState = presenter->getWifiState();
 
     if(wifiState)
+    {
         mainWifiLogo.setAlpha(255);
+        mainWifiCross.setVisible(false);
+    }
     else
+    {
         mainWifiLogo.setAlpha(50);
+        mainWifiCross.setVisible(true);
+    }
 
     mainWifiLogo.invalidate();
+    mainWifiCross.invalidate();
 }
 
 void MainView::tearDownScreen()

@@ -11,6 +11,8 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
 class StatusViewBase : public touchgfx::View<StatusPresenter>
 {
@@ -32,6 +34,8 @@ protected:
     touchgfx::ButtonWithLabel btnStatusHome;
     touchgfx::TextArea statusHeader;
     touchgfx::Image statusWifiLogo;
+    touchgfx::Line statusWifiCross;
+    touchgfx::PainterRGB565 statusWifiCrossPainter;
 
 private:
 
@@ -45,6 +49,11 @@ private:
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // STATUSVIEWBASE_HPP
