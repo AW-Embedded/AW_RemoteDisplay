@@ -930,7 +930,7 @@
     "DisplayOrientation": "Landscape",
     "Family": "STM32F7",
     "Platform": "m7",
-    "ProjectFile": "../STM32F746G_DISCO.ioc",
+    "ProjectFile": "../AW_RemoteDisplay.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": []
   },

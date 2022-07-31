@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "STM32F746G_DISCO",
+    "Name": "AW_RemoteDisplay",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":
@@ -18,7 +18,7 @@
     "Family": "STM32F7",
     "SubFamily": "STM32F7x6",
     "Platform": "m7",
-    "ProjectFile": "../STM32F746G_DISCO.ioc",
+    "ProjectFile": "../AW_RemoteDisplay.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [
     ]

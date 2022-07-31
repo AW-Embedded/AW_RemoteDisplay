@@ -60,37 +60,37 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := STM32F746G_DISCO
+BUILD_ARTIFACT_NAME := AW_RemoteDisplay
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-STM32F746G_DISCO.elf \
+AW_RemoteDisplay.elf \
 
 MAP_FILES += \
-STM32F746G_DISCO.map \
+AW_RemoteDisplay.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-STM32F746G_DISCO.list \
+AW_RemoteDisplay.list \
 
 OBJCOPY_HEX += \
-STM32F746G_DISCO.hex \
+AW_RemoteDisplay.hex \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: STM32F746G_DISCO.elf secondary-outputs
+main-build: AW_RemoteDisplay.elf secondary-outputs
 
 # Tool invocations
-STM32F746G_DISCO.elf STM32F746G_DISCO.map: $(OBJS) $(USER_OBJS) D:\TouchGFXProjects\AW_RemoteDisplay\AW_RemoteDisplay\STM32CubeIDE\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32F746G_DISCO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\TouchGFXProjects\AW_RemoteDisplay\AW_RemoteDisplay\STM32CubeIDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F746G_DISCO.map" -Wl,--gc-sections -static -LC:/Dev/STM32F746-DISCO/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/git/STM32F746-dk/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/dev/pacman/at/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LD:/TouchGFXProjects/AW_RemoteDisplay/AW_RemoteDisplay/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+AW_RemoteDisplay.elf AW_RemoteDisplay.map: $(OBJS) $(USER_OBJS) D:\TouchGFXProjects\AW_RemoteDisplay\AW_RemoteDisplay\STM32CubeIDE\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "AW_RemoteDisplay.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\TouchGFXProjects\AW_RemoteDisplay\AW_RemoteDisplay\STM32CubeIDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AW_RemoteDisplay.map" -Wl,--gc-sections -static -LC:/Dev/STM32F746-DISCO/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/git/STM32F746-dk/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LC:/dev/pacman/at/stm32f746g_disco/STM32F746G_DISCO/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc -LD:/TouchGFXProjects/AW_RemoteDisplay/AW_RemoteDisplay/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -99,19 +99,19 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F746G_DISCO.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32F746G_DISCO.list"
+AW_RemoteDisplay.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "AW_RemoteDisplay.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F746G_DISCO.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "STM32F746G_DISCO.hex"
+AW_RemoteDisplay.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "AW_RemoteDisplay.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) STM32F746G_DISCO.elf STM32F746G_DISCO.hex STM32F746G_DISCO.list STM32F746G_DISCO.map default.size.stdout
+	-$(RM) AW_RemoteDisplay.elf AW_RemoteDisplay.hex AW_RemoteDisplay.list AW_RemoteDisplay.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>STM32F746G_DISCO</name>
+	<name>AW_RemoteDisplay</name>
 	<comment/>
 	<projects>
 	</projects>
@@ -33,11 +33,6 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
-		<link>
-			<name>STM32F746G_DISCO.ioc</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/STM32F746G_DISCO.ioc</locationURI>
-		</link>
 		<link>
 			<name>Drivers/BSP/stm32746g_discovery_qspi.c</name>
 			<type>1</type>
