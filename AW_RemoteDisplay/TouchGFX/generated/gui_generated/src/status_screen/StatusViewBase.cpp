@@ -36,6 +36,11 @@ StatusViewBase::StatusViewBase() :
     statusWifiLogo.setBitmap(touchgfx::Bitmap(BITMAP_WIFI_WHITE_ID));
     statusWifiLogo.setAlpha(50);
 
+    boxWithBorder1.setPosition(48, 29, 372, 215);
+    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(214, 214, 214));
+    boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    boxWithBorder1.setBorderSize(1);
+
     statusWifiCross.setPosition(456, 0, 24, 24);
     statusWifiCrossPainter.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
     statusWifiCross.setPainter(statusWifiCrossPainter);
@@ -44,12 +49,93 @@ StatusViewBase::StatusViewBase() :
     statusWifiCross.setLineWidth(2);
     statusWifiCross.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
 
+    statusStateGreen.setXY(182, 51);
+    statusStateGreen.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    textArea1.setXY(102, 49);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_O6ZB));
+
+    textArea1_1.setXY(102, 99);
+    textArea1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1.setLinespacing(0);
+    textArea1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RASO));
+
+    textArea1_2.setXY(102, 149);
+    textArea1_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2.setLinespacing(0);
+    textArea1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NRVY));
+
+    textArea1_3.setXY(102, 199);
+    textArea1_3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_3.setLinespacing(0);
+    textArea1_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BFVC));
+
+    statusStateGreen_4.setXY(347, 51);
+    statusStateGreen_4.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    textArea1_4.setXY(267, 49);
+    textArea1_4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_4.setLinespacing(0);
+    textArea1_4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HMEJ));
+
+    textArea1_1_1.setXY(267, 99);
+    textArea1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1_1.setLinespacing(0);
+    textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LGSR));
+
+    textArea1_2_1.setXY(267, 149);
+    textArea1_2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_2_1.setLinespacing(0);
+    textArea1_2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JUSQ));
+
+    textArea1_3_1.setXY(267, 199);
+    textArea1_3_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_3_1.setLinespacing(0);
+    textArea1_3_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_948U));
+
+    statusStateGreen_1.setXY(182, 101);
+    statusStateGreen_1.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    statusStateGreen_2.setXY(182, 151);
+    statusStateGreen_2.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    statusStateGreen_3.setXY(182, 201);
+    statusStateGreen_3.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    statusStateGreen_5.setXY(347, 101);
+    statusStateGreen_5.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    statusStateGreen_6.setXY(347, 151);
+    statusStateGreen_6.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
+    statusStateGreen_7.setXY(347, 201);
+    statusStateGreen_7.setBitmap(touchgfx::Bitmap(BITMAP_GREENLED_ID));
+
     add(__background);
     add(statusBG);
     add(btnStatusHome);
     add(statusHeader);
     add(statusWifiLogo);
+    add(boxWithBorder1);
     add(statusWifiCross);
+    add(statusStateGreen);
+    add(textArea1);
+    add(textArea1_1);
+    add(textArea1_2);
+    add(textArea1_3);
+    add(statusStateGreen_4);
+    add(textArea1_4);
+    add(textArea1_1_1);
+    add(textArea1_2_1);
+    add(textArea1_3_1);
+    add(statusStateGreen_1);
+    add(statusStateGreen_2);
+    add(statusStateGreen_3);
+    add(statusStateGreen_5);
+    add(statusStateGreen_6);
+    add(statusStateGreen_7);
 }
 
 void StatusViewBase::setupScreen()

@@ -16,6 +16,33 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_948U" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 8</Translation>
+      </Text>
+      <Text Id="__SingleUse_JUSQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 7</Translation>
+      </Text>
+      <Text Id="__SingleUse_LGSR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 6</Translation>
+      </Text>
+      <Text Id="__SingleUse_HMEJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 5</Translation>
+      </Text>
+      <Text Id="__SingleUse_BFVC" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 4</Translation>
+      </Text>
+      <Text Id="__SingleUse_NRVY" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 3</Translation>
+      </Text>
+      <Text Id="__SingleUse_RASO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 2</Translation>
+      </Text>
+      <Text Id="__SingleUse_O6ZB" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Zone 1</Translation>
+      </Text>
+      <Text Id="__SingleUse_5BU5" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Live Data</Translation>
+      </Text>
       <Text Id="__SingleUse_XSLF" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">4</Translation>
       </Text>

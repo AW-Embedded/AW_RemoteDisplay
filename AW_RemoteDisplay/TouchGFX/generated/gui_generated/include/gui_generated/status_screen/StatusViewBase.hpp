@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
@@ -34,8 +35,25 @@ protected:
     touchgfx::ButtonWithLabel btnStatusHome;
     touchgfx::TextArea statusHeader;
     touchgfx::Image statusWifiLogo;
+    touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::Line statusWifiCross;
     touchgfx::PainterRGB565 statusWifiCrossPainter;
+    touchgfx::Image statusStateGreen;
+    touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::TextArea textArea1_2;
+    touchgfx::TextArea textArea1_3;
+    touchgfx::Image statusStateGreen_4;
+    touchgfx::TextArea textArea1_4;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextArea textArea1_2_1;
+    touchgfx::TextArea textArea1_3_1;
+    touchgfx::Image statusStateGreen_1;
+    touchgfx::Image statusStateGreen_2;
+    touchgfx::Image statusStateGreen_3;
+    touchgfx::Image statusStateGreen_5;
+    touchgfx::Image statusStateGreen_6;
+    touchgfx::Image statusStateGreen_7;
 
 private:
 

@@ -452,6 +452,17 @@
             "EndY": 19.0,
             "LineWidth": 2.0,
             "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 193,
+            "Y": 242,
+            "Width": 95,
+            "Height": 24,
+            "TextId": "__SingleUse_5BU5",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
         "Interactions": [
@@ -937,6 +948,25 @@
             "Alpha": 50
           },
           {
+            "Type": "BoxWithBorder",
+            "Name": "boxWithBorder1",
+            "X": 48,
+            "Y": 29,
+            "Width": 372,
+            "Height": 215,
+            "Color": {
+              "Red": 214,
+              "Green": 214,
+              "Blue": 214
+            },
+            "BorderColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderSize": 1
+          },
+          {
             "Type": "Line",
             "Name": "statusWifiCross",
             "X": 456,
@@ -951,6 +981,166 @@
             "EndY": 19.0,
             "LineWidth": 2.0,
             "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen",
+            "X": 182,
+            "Y": 51,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 102,
+            "Y": 49,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_O6ZB",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 102,
+            "Y": 99,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_RASO",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2",
+            "X": 102,
+            "Y": 149,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_NRVY",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_3",
+            "X": 102,
+            "Y": 199,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_BFVC",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_4",
+            "X": 347,
+            "Y": 51,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_4",
+            "X": 267,
+            "Y": 49,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_HMEJ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 267,
+            "Y": 99,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_LGSR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_2_1",
+            "X": 267,
+            "Y": 149,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_JUSQ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_3_1",
+            "X": 267,
+            "Y": 199,
+            "Width": 70,
+            "Height": 24,
+            "TextId": "__SingleUse_948U",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_1",
+            "X": 182,
+            "Y": 101,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_2",
+            "X": 182,
+            "Y": 151,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_3",
+            "X": 182,
+            "Y": 201,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_5",
+            "X": 347,
+            "Y": 101,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_6",
+            "X": 347,
+            "Y": 151,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "statusStateGreen_7",
+            "X": 347,
+            "Y": 201,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "GREENled.png"
           }
         ],
         "Interactions": [

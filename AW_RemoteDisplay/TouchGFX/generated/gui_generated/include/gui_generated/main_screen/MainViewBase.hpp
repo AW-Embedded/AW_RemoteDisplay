@@ -79,6 +79,7 @@ protected:
     touchgfx::TextArea textArea1_1_2;
     touchgfx::Line mainWifiCross;
     touchgfx::PainterRGB565 mainWifiCrossPainter;
+    touchgfx::TextArea textArea2;
 
 private:
 

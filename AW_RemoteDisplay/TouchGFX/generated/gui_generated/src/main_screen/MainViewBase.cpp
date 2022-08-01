@@ -224,6 +224,11 @@ MainViewBase::MainViewBase() :
     mainWifiCross.setLineWidth(2);
     mainWifiCross.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
 
+    textArea2.setXY(193, 242);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5BU5));
+
     add(__background);
     add(mainBG);
     add(digitalClock1);
@@ -247,6 +252,7 @@ MainViewBase::MainViewBase() :
     add(textArea1_1_1);
     add(textArea1_1_2);
     add(mainWifiCross);
+    add(textArea2);
 }
 
 void MainViewBase::setupScreen()
