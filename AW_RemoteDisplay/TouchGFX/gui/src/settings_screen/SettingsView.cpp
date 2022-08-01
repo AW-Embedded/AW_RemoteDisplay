@@ -17,7 +17,27 @@ void SettingsView::setupScreen()
     // Init screen for current WiFi state
     wifiEnabled = presenter->getWifiState();
     toggleButtonWiFi.forceState(wifiEnabled);
+
+    if(wifiEnabled)
+    {
+        // Enable the connect button & show message
+        btnSettingsConnect.setAlpha(255);
+        btnSettingsConnect.setTouchable(true);
+        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Enabled", TEXTAREAWIFISTATE_SIZE);
+        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
+    }
+    else
+    {
+        // Disable the connect button & show message
+        btnSettingsConnect.setAlpha(75);
+        btnSettingsConnect.setTouchable(false);
+        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Disabled", TEXTAREAWIFISTATE_SIZE);
+        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    }
+
     toggleButtonWiFi.invalidate();
+    btnSettingsConnect.invalidate();
+    textAreaWifiState.invalidate();
 }
 
 void SettingsView::tearDownScreen()
@@ -66,12 +86,19 @@ void SettingsView::wifi_toggle()
     {
         Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Enabled", TEXTAREAWIFISTATE_SIZE);
         textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
+        // Enable the connect button
+        btnSettingsConnect.setAlpha(255);
+        btnSettingsConnect.setTouchable(true);
     }
     else
     {
         Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Disabled", TEXTAREAWIFISTATE_SIZE);
         textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+        // Disable the connect button
+        btnSettingsConnect.setAlpha(75);
+        btnSettingsConnect.setTouchable(false);
     }
 
     textAreaWifiState.invalidate();
+    btnSettingsConnect.invalidate();
 }
