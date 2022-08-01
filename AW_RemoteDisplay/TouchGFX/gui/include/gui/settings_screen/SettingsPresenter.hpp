@@ -37,6 +37,8 @@ public:
         return model->getWifiState();
     }
 
+    void prWifiEnable(bool enableState);
+
 private:
     SettingsPresenter();
 

@@ -7,6 +7,10 @@
 extern RTC_HandleTypeDef hrtc;
 extern RTC_TimeTypeDef RTC_Time;
 extern RTC_DateTypeDef RTC_Date;
+
+extern "C" {
+    extern void wifi_enable_hw(bool enableState);
+}
 #endif
 
 Model::Model() : modelListener(0), wifiState(false)
@@ -37,5 +41,12 @@ void Model::timeUpdate()
 
     hour = RTC_Time.Hours;
     minute = RTC_Time.Minutes;
+#endif
+}
+
+void Model::wifiEnable(bool enableState)
+{
+#ifndef SIMULATOR
+    wifi_enable_hw(enableState);
 #endif
 }

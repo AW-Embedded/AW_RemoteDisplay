@@ -37,6 +37,8 @@ public:
         return hour;
     }
 
+    void wifiEnable(bool enableState);
+
 protected:
     ModelListener* modelListener;
 

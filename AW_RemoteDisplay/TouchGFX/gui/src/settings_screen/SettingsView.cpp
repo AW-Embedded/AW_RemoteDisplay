@@ -14,6 +14,8 @@ void SettingsView::setupScreen()
 {
     SettingsViewBase::setupScreen();
 
+    // Maybe check WiFi hardware pin here
+
     // Init screen for current WiFi state
     wifiEnabled = presenter->getWifiState();
     toggleButtonWiFi.forceState(wifiEnabled);
@@ -62,12 +64,21 @@ void SettingsView::updateScreen()
 // Toggle button click handler for WiFi Enable / Disable
 void SettingsView::wifi_toggle()
 {
+    // Get & save user selected state
     wifiEnabled = toggleButtonWiFi.getState();
     presenter->saveWifiState(wifiEnabled);
 
+    // Set hardware
+    vWifiEnable(wifiEnabled);
+    // Handle UI
     wifi_status_handler(wifiEnabled);
 }
 
+// Enable / Disable the Wifi Hardware
+void SettingsView::vWifiEnable(bool enableState)
+{
+    presenter->prWifiEnable(enableState);
+}
 
 void SettingsView::wifi_status_handler(bool state)
 {

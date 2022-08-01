@@ -17,6 +17,7 @@ public:
 protected:
     bool wifiEnabled;
     void wifi_status_handler(bool state);
+    void vWifiEnable(bool enableState);
 };
 
 #endif // SETTINGSVIEW_HPP

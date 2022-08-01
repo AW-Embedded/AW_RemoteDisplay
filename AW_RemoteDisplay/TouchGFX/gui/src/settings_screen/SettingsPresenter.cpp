@@ -16,3 +16,8 @@ void SettingsPresenter::deactivate()
 {
 
 }
+
+void SettingsPresenter::prWifiEnable(bool enableState)
+{
+    model->wifiEnable(enableState);
+}
