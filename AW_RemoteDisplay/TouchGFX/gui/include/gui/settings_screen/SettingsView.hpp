@@ -16,6 +16,7 @@ public:
     virtual void updateScreen();
 protected:
     bool wifiEnabled;
+    void wifi_status_handler(bool state);
 };
 
 #endif // SETTINGSVIEW_HPP

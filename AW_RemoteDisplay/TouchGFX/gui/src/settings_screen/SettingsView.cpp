@@ -18,26 +18,9 @@ void SettingsView::setupScreen()
     wifiEnabled = presenter->getWifiState();
     toggleButtonWiFi.forceState(wifiEnabled);
 
-    if(wifiEnabled)
-    {
-        // Enable the connect button & show message
-        btnSettingsConnect.setAlpha(255);
-        btnSettingsConnect.setTouchable(true);
-        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Enabled", TEXTAREAWIFISTATE_SIZE);
-        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
-    }
-    else
-    {
-        // Disable the connect button & show message
-        btnSettingsConnect.setAlpha(75);
-        btnSettingsConnect.setTouchable(false);
-        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Disabled", TEXTAREAWIFISTATE_SIZE);
-        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-    }
+    wifi_status_handler(wifiEnabled);
 
     toggleButtonWiFi.invalidate();
-    btnSettingsConnect.invalidate();
-    textAreaWifiState.invalidate();
 }
 
 void SettingsView::tearDownScreen()
@@ -82,21 +65,27 @@ void SettingsView::wifi_toggle()
     wifiEnabled = toggleButtonWiFi.getState();
     presenter->saveWifiState(wifiEnabled);
 
-    if(wifiEnabled)
+    wifi_status_handler(wifiEnabled);
+}
+
+
+void SettingsView::wifi_status_handler(bool state)
+{
+    if(state)
     {
-        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Enabled", TEXTAREAWIFISTATE_SIZE);
-        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
-        // Enable the connect button
+        // Enable the connect button & show message
         btnSettingsConnect.setAlpha(255);
         btnSettingsConnect.setTouchable(true);
+        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Enabled", TEXTAREAWIFISTATE_SIZE);
+        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(0, 255, 0));
     }
     else
     {
-        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Disabled", TEXTAREAWIFISTATE_SIZE);
-        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-        // Disable the connect button
+        // Disable the connect button & show message
         btnSettingsConnect.setAlpha(75);
         btnSettingsConnect.setTouchable(false);
+        Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Disabled", TEXTAREAWIFISTATE_SIZE);
+        textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
     }
 
     textAreaWifiState.invalidate();
