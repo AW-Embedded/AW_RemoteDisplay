@@ -16,8 +16,10 @@ public:
     virtual void updateScreen();
 protected:
     bool wifiEnabled;
+    bool wifiConnected;
     void wifi_status_handler(bool state);
     void vWifiEnable(bool enableState);
+    bool vWifiConnect(char* ssid, char* pw);
 };
 
 #endif // SETTINGSVIEW_HPP

@@ -10,10 +10,11 @@ extern RTC_DateTypeDef RTC_Date;
 
 extern "C" {
     extern void wifi_enable_hw(bool enableState);
+    extern bool wifi_connect_hw(char* ssid, char* pw);
 }
 #endif
 
-Model::Model() : modelListener(0), wifiState(false)
+Model::Model() : modelListener(0), wifiState(false), wifiConnected(false)
 {
     tickCounter = 0;
 
@@ -48,5 +49,15 @@ void Model::wifiEnable(bool enableState)
 {
 #ifndef SIMULATOR
     wifi_enable_hw(enableState);
+#endif
+}
+
+bool Model::wifiConnect(char* ssid, char* pw)
+{
+#ifndef SIMULATOR
+    wifiConnected =  wifi_connect_hw(ssid, pw);
+    return wifiConnected;
+#else
+   return false;
 #endif
 }

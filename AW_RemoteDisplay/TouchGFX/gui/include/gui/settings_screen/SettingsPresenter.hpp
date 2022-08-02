@@ -32,12 +32,21 @@ public:
         model->saveWifiState(state);
     }
 
+    // User has enabled / disabled WiFi
     bool getWifiState()
     {
         return model->getWifiState();
     }
 
+    // WiFi has an active connection
+    bool getWifiConnected()
+    {
+        return model->getWifiConnected();
+    }
+
     void prWifiEnable(bool enableState);
+
+    bool prWifiConnect(char* ssid, char* pw);
 
 private:
     SettingsPresenter();

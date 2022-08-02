@@ -18,6 +18,8 @@ void SettingsView::setupScreen()
 
     // Init screen for current WiFi state
     wifiEnabled = presenter->getWifiState();
+    wifiConnected = presenter->getWifiConnected(); // TODO Add to
+
     toggleButtonWiFi.forceState(wifiEnabled);
 
     wifi_status_handler(wifiEnabled);
@@ -78,6 +80,12 @@ void SettingsView::wifi_toggle()
 void SettingsView::vWifiEnable(bool enableState)
 {
     presenter->prWifiEnable(enableState);
+}
+
+// Attempt WiFi connection
+bool SettingsView::vWifiConnect(char* ssid, char* pw)
+{
+    return presenter->prWifiConnect(ssid, pw);
 }
 
 void SettingsView::wifi_status_handler(bool state)

@@ -22,9 +22,16 @@ public:
         wifiState = state;
     }
 
+    // User has enabled / disabled WiFi
     bool getWifiState()
     {
         return wifiState;
+    }
+
+    // WiFi has an active connection
+    bool getWifiConnected()
+    {
+        return wifiConnected;
     }
 
     uint8_t getMinutes()
@@ -38,12 +45,14 @@ public:
     }
 
     void wifiEnable(bool enableState);
+    bool wifiConnect(char* ssid, char* pw);
 
 protected:
     ModelListener* modelListener;
 
     int tickCounter = 0;
     bool wifiState;
+    bool wifiConnected;
     uint8_t hour = 0;
     uint8_t minute = 0;
 
