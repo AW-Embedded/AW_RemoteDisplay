@@ -52,12 +52,9 @@ void Model::wifiEnable(bool enableState)
 #endif
 }
 
-bool Model::wifiConnect(char* ssid, char* pw)
+void Model::wifiConnect(char* ssid, char* pw)
 {
 #ifndef SIMULATOR
-    wifiConnected = wifi_connect_hw(ssid, pw);
-    return wifiConnected;
-#else
-   return false;
+    wifi_connect_hw(ssid, pw);
 #endif
 }

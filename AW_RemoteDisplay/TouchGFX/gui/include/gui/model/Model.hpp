@@ -45,7 +45,7 @@ public:
     }
 
     void wifiEnable(bool enableState);
-    bool wifiConnect(char* ssid, char* pw);
+    void wifiConnect(char* ssid, char* pw);
 
 protected:
     ModelListener* modelListener;

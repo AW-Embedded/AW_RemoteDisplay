@@ -743,10 +743,9 @@ void wifi_enable_hw(bool enableState)
 }
 
 // Replace with code to make WiFi connection
-bool wifi_connect_hw(char* ssid, char* pw)
+void wifi_connect_hw(char* ssid, char* pw)
 {
     HAL_GPIO_TogglePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin);
-    return false;
 }
 /* USER CODE END 4 */
 

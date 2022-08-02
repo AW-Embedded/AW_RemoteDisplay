@@ -46,7 +46,7 @@ public:
 
     void prWifiEnable(bool enableState);
 
-    bool prWifiConnect(char* ssid, char* pw);
+    void prWifiConnect(char* ssid, char* pw);
 
 private:
     SettingsPresenter();

@@ -22,7 +22,7 @@ void SettingsPresenter::prWifiEnable(bool enableState)
     model->wifiEnable(enableState);
 }
 
-bool SettingsPresenter::prWifiConnect(char* ssid, char* pw)
+void SettingsPresenter::prWifiConnect(char* ssid, char* pw)
 {
-    return model->wifiConnect(ssid, pw);
+    model->wifiConnect(ssid, pw);
 }
