@@ -98,6 +98,7 @@ SettingsViewBase::SettingsViewBase() :
     btnSettingsConnect.setLabelText(touchgfx::TypedText(T___SINGLEUSE_EFNW));
     btnSettingsConnect.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     btnSettingsConnect.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    btnSettingsConnect.setAction(buttonCallback);
 
     add(__background);
     add(settingsBG);
@@ -159,6 +160,13 @@ void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //When toggleButtonWiFi clicked call virtual function
         //Call wifi_toggle
         wifi_toggle();
+    }
+    else if (&src == &btnSettingsConnect)
+    {
+        //wifiConnect
+        //When btnSettingsConnect clicked call virtual function
+        //Call wifi_connect
+        wifi_connect();
     }
 }
 

@@ -47,6 +47,11 @@ public:
         // Override and implement this function in Settings
     }
 
+    virtual void wifi_connect()
+    {
+        // Override and implement this function in Settings
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());

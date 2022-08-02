@@ -880,6 +880,17 @@
               "Type": "ActionCustom",
               "FunctionName": "updateScreen"
             }
+          },
+          {
+            "InteractionName": "wifiConnect",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnSettingsConnect"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "wifi_connect"
+            }
           }
         ],
         "CustomActions": [

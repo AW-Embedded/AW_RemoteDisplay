@@ -37,7 +37,7 @@ void SettingsView::keyboardSelected(uint8_t value)
     keyboardSelection = value;
 }
 
-void SettingsView::updateScreen()
+void SettingsView::updateScreen() // TODO Copy to char arrays to pass to application
 {
     if(Unicode::strlen(keyboardBuffer[0]) > 0)
     {
@@ -82,10 +82,10 @@ void SettingsView::vWifiEnable(bool enableState)
     presenter->prWifiEnable(enableState);
 }
 
-// Attempt WiFi connection
-bool SettingsView::vWifiConnect(char* ssid, char* pw)
+// Connect button click handler for WiFi connect
+void SettingsView::wifi_connect()
 {
-    return presenter->prWifiConnect(ssid, pw);
+    presenter->prWifiConnect(NULL, NULL); //TODO Use actual data
 }
 
 void SettingsView::wifi_status_handler(bool state)

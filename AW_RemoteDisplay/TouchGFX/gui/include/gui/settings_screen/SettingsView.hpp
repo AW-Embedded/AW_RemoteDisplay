@@ -12,6 +12,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void wifi_toggle();
+    virtual void wifi_connect();
     virtual void keyboardSelected(uint8_t value);
     virtual void updateScreen();
 protected:
@@ -19,7 +20,6 @@ protected:
     bool wifiConnected;
     void wifi_status_handler(bool state);
     void vWifiEnable(bool enableState);
-    bool vWifiConnect(char* ssid, char* pw);
 };
 
 #endif // SETTINGSVIEW_HPP
