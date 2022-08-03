@@ -85,6 +85,10 @@ void SettingsView::vWifiEnable(bool enableState)
 // Connect button click handler for WiFi connect
 void SettingsView::wifi_connect()
 {
+    Unicode::strncpy(textAreaWifiStateBuffer, "WiFi: Connecting", TEXTAREAWIFISTATE_SIZE);
+    textAreaWifiState.setColor(touchgfx::Color::getColorFromRGB(255, 140, 0));
+    textAreaWifiState.invalidate();
+
     presenter->prWifiConnect(NULL, NULL); //TODO Use actual data
 }
 
