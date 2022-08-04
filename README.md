@@ -30,6 +30,12 @@ Settings page
 
 ![](/settingsScreen.PNG)
 
+Keyboard page
+- Self explanatory
+- Will not show in the designer, as it is generated in the code
+
+![](/keyboardScreen.PNG)
+
 Status page
 - Wifi indicator at top right
 - Just a static example, nothing too exciting
