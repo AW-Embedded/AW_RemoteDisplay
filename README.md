@@ -2,10 +2,15 @@
 
 Example use of TouchGFX on STM32F746G-DISCO
 
+**Credit** to "EE by karl" on YouTube For help with the TouchGFX keyboard example integration:
+
+https://www.youtube.com/watch?v=uE6eiTjOP-g
+
 Important: On the hardware, screen transitions can cause the application to crash
 - This may be related to my specific board, or a general issue with these boards and this configuration
 - In any case, this is for demonstration purposes only and can be seen working in the simulator
 - Using other boards I don't have this problem with screen transitions (F769 Discovery, H7 based boards)
+- Project created using STM32F746G-DISCO template in TouchGFX designer
 
 Built using:
 - TouchGFX Designer V4.20.0
