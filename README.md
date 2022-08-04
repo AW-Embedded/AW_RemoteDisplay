@@ -11,6 +11,7 @@ Built using:
 - TouchGFX Designer V4.20.0
 - STM32Cube FW_F7 V1.17.0
 - STM32CubeMX V6.6.1
+- STM32CubeIDE v1.10.1
 
 This example mostly uses the MVP (model view presenter) way of coding.
 
